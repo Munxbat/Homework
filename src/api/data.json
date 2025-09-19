@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "proImg": "/product/1.jpg",
+    "singImg": "/product/product-single/1.jpg",
+    "title": "Makita miter saw",
+    "slug": "Fresh-key-Lime",
+    "price": "$22.00",
+    "delPrice": "$25.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Transport"
+  },
+  {
+    "id": 2,
+    "proImg": "/product/2.jpg",
+    "singImg": "/product/product-single/2.jpg",
+    "title": "Impact Drill Yato Brand",
+    "slug": "Red-Radish",
+    "price": "$22.00",
+    "delPrice": "$25.00",
+    "brand":"Book",
+    "size":"XXl",
+    "category":"Transport"
+  },
+  {
+    "id": 3,
+    "proImg": "/product/3.jpg",
+    "singImg": "/product/product-single/3.jpg",
+    "title": "Contractor Grade (MR100CG)",
+    "slug": "Cauliflower",
+    "price": "$25.00",
+    "delPrice": "$33.00",
+    "brand":"Book",
+    "size":"L",
+    "category":"Logistic"
+  },
+  {
+    "id": 4,
+    "proImg": "/product/4.jpg",
+    "singImg": "/product/product-single/4.jpg",
+    "title": "LiIon Compact Drill Driver",
+    "slug": "Yellow-Corn",
+    "price": "16.00",
+    "delPrice": "10.00",
+    "brand":"Book",
+    "size":"M",
+    "category":"Warehouses"
+  },
+  {
+    "id": 5,
+    "proImg": "/product/5.jpg",
+    "singImg": "/product/product-single/5.jpg",
+    "title": "Cutter Grinder",
+    "slug": "Red-Onion",
+    "price": "15.00",
+    "delPrice": "20.00",
+    "brand":"Book",
+    "size":"XXl",
+    "category":"Logistic"
+  },
+  {
+    "id": 6,
+    "proImg": "/product/6.jpg",
+    "singImg": "/product/product-single/6.jpg",
+    "title": "Cut off Saw 3000W (4HP)",
+    "slug": "Lens-Broccoli",
+    "price": "150.00",
+    "delPrice": "200.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Logistic"
+  },
+  {
+    "id": 7,
+    "proImg": "/product/7.jpg",
+    "singImg": "/product/product-single/7.jpg",
+    "title": "Radial arm saw",
+    "slug": "Orange-Paprika",
+    "price": "120.00",
+    "delPrice": "150.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Warehouses"
+  },
+  {
+    "id": 8,
+    "proImg": "/product/8.jpg",
+    "singImg": "/product/product-single/8.jpg",
+    "title": "Heat Gun",
+    "slug": "Fresh-Mushrooms",
+    "price": "130.00",
+    "delPrice": "160.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Transport"
+  }
+
+]
