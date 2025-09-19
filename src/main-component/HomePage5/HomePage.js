@@ -1,0 +1,35 @@
+import React, { Fragment } from 'react';
+import NavbarS3 from '../../components/NavbarS3/NavbarS3';
+import Hero5 from '../../components/hero5/Hero5';
+import AboutS2 from '../../components/aboutS2/aboutS2';
+import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
+import ServiceSectionS2 from '../../components/ServiceSectionS2/ServiceSectionS2';
+import SkillSection from '../../components/SkillSection/SkillSection';
+import ProjectSection from '../../components/ProjectSection/ProjectSection';
+import Testimonial from '../../components/Testimonial/Testimonial';
+import BlogSection from '../../components/BlogSection/BlogSection';
+import CtaSection from '../../components/CtaSection/CtaSection';
+import Footer from '../../components/footer/Footer';
+import Scrollbar from '../../components/scrollbar/scrollbar';
+import SImg from '../../images/skill2.jpg'
+import HeroSlider from '../../components/HeroSlider/HeroSlider';
+
+const HomePage = () => {
+    return (
+        <Fragment>
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} />
+            <HeroSlider hclass={'wpo-hero-slider wpo-hero-slider-s4'}/>
+            <AboutS2 hclass={'wpo-about-area-s4 section-padding'}/>
+            <FeaturesSection hclass={'wpo-features-area-s2 section-padding'} />
+            <ServiceSectionS2 hclass={"wpo-service-area-s2"} ServiceBtn={true} />
+            <SkillSection hclass={'wpo-skill-section-s2 section-padding'} Akimg={SImg} />
+            <ProjectSection hclass={'wpo-project-area-s3'} SectionTitleShow={true} />
+            <Testimonial hclass={'wpo-testimonial-area-s3 section-padding'} />
+            <BlogSection hclass={'wpo-blog-section-s3 section-padding'} />
+            <CtaSection hclass={'wpo-subscribe-section-s2 section-bg'} />
+            <Footer hclass={'wpo-site-footer-s2'} />
+            <Scrollbar />
+        </Fragment>
+    )
+};
+export default HomePage;
