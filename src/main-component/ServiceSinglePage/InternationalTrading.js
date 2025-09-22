@@ -22,7 +22,7 @@ const InternationalTrading = (props) => {
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={serviceDetails.title} pagesub={'Service Single'} />
 
-            <div className="wpo-service-single-area-s2 section-padding">
+            <div className="wpo-service-single-area-s4 section-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-12">

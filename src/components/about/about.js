@@ -29,11 +29,11 @@ const about = (props) => {
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
-                            <img src={props.Ab} alt="" />
-                                <div className="wpo-about-item">
+                            <img src={props.Ab} alt="" style={{ marginLeft: '44px' }} />
+                                <div className="wpo-about-item" style={{marginLeft:"40px", marginBlockEnd:"-50px"}}>
                                     <div className="wpo-about-top">
                                         <div className="wpo-about-thumb-img">
-                                        <img src={Abd1} alt="" />
+                                        <img src={Abd1} alt=""  />
                                         </div>
                                         <div className="wpo-about-info">
                                             <div className="wpo-about-info-text">
@@ -51,7 +51,7 @@ const about = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="wpo-about-content">
+                                    <div className="wpo-about-content" style={{textAlign:"center"}}>
                                         <p>"We will work hard to provide our customers with satisfactory, fast, and reliable service."</p>
                                     </div>
                                 </div>

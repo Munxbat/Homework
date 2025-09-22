@@ -66,6 +66,7 @@ Our consulting service is designed to provide mining and industrial companies wi
                                         <li>Deliver financial and market analysis for smarter investment decisions.</li></ul>
 
                                 </div>
+                               
                                 <div className="wpo-service-single-item">
                                     <div className="wpo-service-single-title">
                                         <h3>Our approach</h3>
@@ -84,6 +85,7 @@ Our consulting service is designed to provide mining and industrial companies wi
                                         <li>Monitor performance and deliver continuous improvement strategies.</li>
                                     </ul>
                                 </div>
+                              
                                 <div className="wpo-service-single-item">
                                     <div className="wpo-service-single-title">
                                         <h3>Related Service</h3>
@@ -91,7 +93,7 @@ Our consulting service is designed to provide mining and industrial companies wi
                                     <div className="wpo-service-area">
                                         <div className="row align-items-center">
                                             {Services.slice(0, 5).map((serv, item) => (
-                                                <div className="col-lg-4 col-md-6 col-12" key={item}>
+                                                <div className="col-lg-4 col-md-4 col-12" key={item}>
                                                     <div className="wpo-service-item">
                                                         <i><img src={serv.image} alt="" /></i>
                                                         <h2>{serv.title} </h2>

@@ -21,6 +21,10 @@ import BlogDetailsLeftSiide from '../BlogDetailsLeftSiide/BlogDetailsLeftSiide'
 import BlogDetailsFull from '../BlogDetailsFull/BlogDetailsFull'
 import ContactPage from '../ContactPage/ContactPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
+import MiningDrills from '../Products/MiningDrills';
+import MiningEquipment from '../Products/MiningEquipment';
+import HeavyTires from '../Products/HeavyTires';
+import VideoPage from '../../components/VideoPage/VideoPage';
 
 
 const AllRoute = () => {
@@ -51,6 +55,10 @@ const AllRoute = () => {
           <Route path="pricing" element={<PricingPage />} />
           <Route path='contact' element={<ContactPage />} />
           <Route path='404' element={<ErrorPage />} /> 
+          <Route path='MiningDrills' element={<MiningDrills />} />
+          <Route path='MiningEquipment' element={<MiningEquipment />} />
+          <Route path="HeavyTires" element={<HeavyTires />} />
+          <Route path="Video/:slug" element={<VideoPage />} />
         </Routes>
       </BrowserRouter>
 

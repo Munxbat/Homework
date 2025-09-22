@@ -15,7 +15,7 @@ const PricingCard = ({ plan, price, features }) => {
                         </div>
                         <div className="wpo-pricing-text">
                             <h2>{price}<span>/per m²</span></h2>
-                            <p>Industries represents the way to feel happy and complete.</p>
+                            <p>High-performance mining drills designed for efficiency and durability. Perfect for small to medium-scale operations.</p>
                         </div>
                     </div>
                     <div className="wpo-pricing-bottom">

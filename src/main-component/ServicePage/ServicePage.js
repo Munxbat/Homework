@@ -11,7 +11,7 @@ const ServicePage = () => {
         <Fragment>
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Service'} pagesub={'Service'} />
-            <ServiceSection hclass={"wpo-service-area section-padding"} ServiceBtn={true} />
+            <ServiceSection hclass={"wpo-service-area-s2 section-padding"} ServiceBtn={true} />
             <Footer hclass={'wpo-site-footer'} />
             <Scrollbar />
         </Fragment>

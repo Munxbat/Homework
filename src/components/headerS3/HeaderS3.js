@@ -6,6 +6,7 @@ import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
 import { RiRobot2Line } from "react-icons/ri";
+import MiningDrills from '../../main-component/Products/MiningDrills';
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
@@ -60,9 +61,9 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link to="#">Products</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/project">Mining equipment</Link></li>
-                                                <li><Link onClick={ClickHandler} to="#">Mining Drills</Link></li>
-                                                <li><Link onClick={ClickHandler} to="#">Heavy Tires</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/MiningEquipment">Mining equipment</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/MiningDrills">Mining Drills</Link></li>
+                                                <li><Link onClick={ClickHandler} to="HeavyTires">Heavy Tires</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
