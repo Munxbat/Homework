@@ -10,7 +10,7 @@ import Logo from '../../images/logo2.svg';
 const ContactPage = () => {
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Contact Us'} pagesub={'Contact'} />
             <Contactpage />
             <Footer hclass={'wpo-site-footer'} />

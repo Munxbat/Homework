@@ -62,35 +62,7 @@ const ServiceSidebar = () => {
                     ))}
                 </ul>
             </div>
-            <div className="wpo-newsletter-widget widget">
-                <h3>Newsletter</h3>
-                <p>Join 20,000 Sabscribers!</p>
-                <form className="form" onSubmit={handleSubmit}>
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        value={email}
-                        onChange={handleInputChange}
-                        required
-                    />
-                    <button type="submit">Sign Up</button>
-                </form>
-                <span>By signing up you agree to our <a href="#">Privecy Policy</a></span>
-            </div>
-            <div className="widget wpo-instagram-widget">
-                <div className="widget-title">
-                    <h3>Instagram</h3>
-                </div>
-                <ul className="d-flex">
-                    <li><img src={IN1} alt="" /></li>
-                    <li><img src={IN2} alt="" /></li>
-                    <li><img src={IN3} alt="" /></li>
-                    <li><img src={IN4} alt="" /></li>
-                    <li><img src={IN5} alt="" /></li>
-                    <li><img src={IN6} alt="" /></li>
-                  
-                </ul>
-            </div>
+            
         </div>
     );
 };

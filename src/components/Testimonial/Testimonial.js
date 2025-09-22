@@ -12,23 +12,23 @@ const testimonials = [
     {
         id: '01',
         img: sImg1,
-        Des: "Phasellus commodo amet, egestas sed pellentesque nisi, urna, blandit magna. Velit quis dolor tincidunt sed sit sed ultricies odio. Fames posuere libero dictumst tincidunt at nunc, est pulvinar dolor bibendum feugiat .",
-        title: 'Leslie Alexander',
-        sub: "MD of Alex Group of Industries",
+        Des: "Манай компани Optimize Inc-ийн өрмийн хошуу болон уул уурхайн сэлбэг хэрэгслийн нийлүүлэлтийг олон жил хэрэглэж байна. Тэдний чанартай бүтээгдэхүүн болон найдвартай үйлчилгээ нь манай төслүүдийн үр ашигтай, тасралтгүй үйл ажиллагаанд чухал хувь нэмэр оруулдаг.",
+        title: 'Bat-Erdene T.',
+        sub: "CEO, Erdenet Mining Corporation",
     },
     {
         id: '02',
         img: sImg2,
-        Des: "Phasellus commodo amet, egestas sed pellentesque nisi, urna, blandit magna. Velit quis dolor tincidunt sed sit sed ultricies odio. Fames posuere libero dictumst tincidunt at nunc, est pulvinar dolor bibendum feugiat .",
+        Des: "Гадаад худалдаа болон сэлбэгийн нийлүүлэлт дээрх Optimize Inc-ийн хамтын ажиллагаа бидний хувьд өндөр ач холбогдолтой. Тэд олон улсын нийлүүлэгчидтэй шууд ажилладаг тул захиалга хурдан, найдвартай ирдэг нь онцлог.",
         title: 'Jenefer Haiway',
-        sub: "CEO of Mendara Offece",
+        sub: "Procurement Director, Caterpillar Mongolia LLC",
     },
     {
         id: '03',
         img: sImg3,
-        Des: "Phasellus commodo amet, egestas sed pellentesque nisi, urna, blandit magna. Velit quis dolor tincidunt sed sit sed ultricies odio. Fames posuere libero dictumst tincidunt at nunc, est pulvinar dolor bibendum feugiat .",
-        title: 'Jenefer Haiway',
-        sub: "CEO of Mendara Offece",
+        Des: "Манай уурхайн өрмийн тоног төхөөрөмжийн засвар, сэлбэгийн хангалт дээр Optimize Inc тогтмол хамтран ажиллаж байна. Тэдний техникийн дэмжлэг болон уян хатан үйлчилгээ нь бидний төсөл, ажлын хэрэгцээнд бүрэн нийцдэг.",
+        title: 'Ganbold Ch.',
+        sub: "Operations Manager, Oyu Tolgoi LLC",
     },
 
 

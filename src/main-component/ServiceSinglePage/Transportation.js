@@ -11,7 +11,7 @@ import Simag2 from '../../images/service-single/img2.jpg'
 import ContactForm from '../../components/ServiceContact/ServiceContact';
 import ServiceSidebar from '../../components/ServiceSidebar/ServiceSidebar';
 
-const ServiceSinglePage = (props) => {
+const Transportation = (props) => {
 
 
     const { slug } = useParams()
@@ -35,9 +35,9 @@ const ServiceSinglePage = (props) => {
                                         <h3>{serviceDetails.title}</h3>
                                     </div>
                                     <p>
-Our consulting service is designed to provide mining and industrial companies with strategic guidance, reliable solutions, and expert support. With years of experience in the supply of drilling bits, spare parts, and international trade, we help our clients optimize operations, reduce costs, and achieve sustainable growth.
-                                    </p>
-                                    <div className="row mt-4">
+Our Transportation & Logistics service ensures the safe, reliable, and efficient movement of mining equipment, drilling tools, and spare parts across Mongolia and international markets. We provide tailored logistics solutions that meet the demanding requirements of the mining industry.                                    
+                                </p>
+                                <div className="row mt-4">
                                         <div className="col-md-6 col-sm-6 col-12">
                                             <div className="wpo-p-details-img">
                                                 <img src={Simag1} alt="" />
@@ -55,33 +55,33 @@ Our consulting service is designed to provide mining and industrial companies wi
                                         <h3>Our Capabilities</h3>
                                     </div>
                                     <ul>
-                                        <li>Provide tailored consulting for mining equipment and spare parts procurement. </li>
+                                        <li>Nationwide transportation of heavy machinery, drilling equipment, and mining spare parts.</li>
 
-                                        <li>Develop strategies to optimize supply chain and reduce operational risks.</li>
+                                        <li>International freight forwarding via air, sea, and land.</li>
 
-                                        <li>Facilitate international trade and logistics solutions for efficient delivery.</li>
+                                        <li>Customs clearance and regulatory compliance support.</li>
 
-                                        <li>Offer technical insights for equipment performance improvement.</li>
+                                        <li>Warehousing and distribution solutions for mining operations.</li>
 
-                                        <li>Deliver financial and market analysis for smarter investment decisions.</li></ul>
+                                        <li>End-to-end logistics management with real-time tracking.</li></ul>
 
                                 </div>
                                 <div className="wpo-service-single-item">
                                     <div className="wpo-service-single-title">
                                         <h3>Our approach</h3>
                                     </div>
-                                        <p>We work closely with our clients to understand their specific needs and operational challenges. From equipment selection to logistics planning, our approach is practical, data-driven, and focused on creating measurable results. By combining local knowledge with global expertise, we ensure our clients stay competitive in a demanding industry.</p>
+                                        <p>We understand that time and safety are critical in the mining industry. Our logistics solutions are designed to minimize delays, reduce costs, and ensure secure handling of valuable equipment. With a professional team and trusted partners, we deliver seamless coordination from supplier to mine site.</p>
                                 </div>
                                 <div className="wpo-service-single-item list-widget">
                                     <div className="wpo-service-single-title">
                                         <h3>Our Work Process</h3>
                                     </div>
                                     <ul>
-                                        <li>Assess client requirements and operational environment.</li>
-                                        <li>Identify cost-effective solutions and reliable suppliers..</li>
-                                        <li>Provide tailored recommendations for mining tools and spare parts.</li>
-                                        <li>Support contract negotiations and trade processes.</li>
-                                        <li>Monitor performance and deliver continuous improvement strategies.</li>
+                                        <li>Assess client transportation and logistics requirements.</li>
+                                        <li>Plan optimized routes and choose the most efficient transport method.</li>
+                                        <li>Manage customs, permits, and documentation.</li>
+                                        <li>Coordinate secure handling, loading, and delivery.</li>
+                                        <li>Provide continuous monitoring and updates until successful delivery.</li>
                                     </ul>
                                 </div>
                                 <div className="wpo-service-single-item">
@@ -122,12 +122,12 @@ Our consulting service is designed to provide mining and industrial companies wi
                 </div>
             </div>
 
-            <Footer hclass={'wpo-site-footer'} />
+            <Footer hclass={'wpo-site-footer-s2'} />
             <Scrollbar />
         </Fragment>
     )
 };
-export default ServiceSinglePage;
+export default Transportation;
 
 
 

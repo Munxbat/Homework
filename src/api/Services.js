@@ -26,13 +26,24 @@ import Simg6 from '../images/service-single/6.jpg'
 const Services = [
     {
         id: 1,
-        image: img1,
-        imageDrak: imgD1,
+        image: img5,
+        imageDrak: imgD5,
         simag: Simg1,
         subtitle: 'Transport',
-        title: 'Mechanical Engineering',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Air-Transport'
+        title: 'Consulting Services',
+        description: (
+            <>
+                <li>Legal due diligence </li>
+           <li> Business analysis & valuation </li>
+           <li> Strategic planning </li>
+           <li> Business plan development </li>
+           <li> Project management </li>
+           <li> Processing & material handling </li>
+           <li> Cost saving optimization </li>
+           <li> Licensing assistance </li>
+            </>
+            ),
+        slug: 'Consulting-Services'
     },
     {
         id: 2,
@@ -40,53 +51,43 @@ const Services = [
         imageDrak: imgD2,
         simag: Simg2,
         subtitle: 'Transport',
-        title: 'Petroleum Refinery',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Ocean-Transport'
+        title: 'International Trading',
+        description: (
+            <>
+       <li> Import of high-quality goods 
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for consumers </li>
+       <li> Heavy machinery lease services </li>
+       <li> International trade facilitation </li>
+       <li> Supply chain management </li>
+       <li> Cross-border logistics&nbsp;coordination </li>
+            <br/>
+            
+            </>
+            
+        ),
+        slug: 'International-Trading'
     },
     {
         id: 3,
-        image: img3,
-        imageDrak: imgD3,
-        simag: Simg3,
-        subtitle: 'Transport',
-        title: 'Power & Energy',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Road-Transport'
-    },
-    {
-        id: 4,
-        image: img4,
-        imageDrak: imgD4,
-        simag: Simg4,
-        subtitle: 'Transport',
-        title: 'Electrical & Power',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Road-Transport2'
-    },
-    {
-        id: 5,
-        image: img5,
-        imageDrak: imgD5,
-        simag: Simg5,
-        subtitle: 'Transport',
-        title: 'Sanitary & Plumbing',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Ocean-Transport2'
-    },
-    {
-        id: 6,
         image: img6,
         imageDrak: imgD6,
-        simag: Simg6,
+        simag: Simg3,
         subtitle: 'Transport',
-        title: 'Industrial Construction',
-        description: 'consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.',
-        slug: 'Road-Transport3'
-    }
-
-
-
-
+        title: 'Transportation & Logistics',
+        description: (
+            <>
+       <li> Compact and midsize trucks </li>
+       <li> Heavy and full-size trucks </li>
+       <li> Dump trucks </li>
+       <li> Truck crane services </li>
+       <li> Special condition transport </li>
+       <li> Inter-city logistics </li>
+       <li> Local delivery services </li>
+            <br/>
+            </>
+        ),
+        slug: 'Transportation-Logistics'
+    },
+    
 ];
 export default Services;

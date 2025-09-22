@@ -31,7 +31,7 @@ const ProductSinglePage =(props) => {
 
     return(
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Shop Single'} pagesub={'Shop Single'}/> 
             <section className="wpo-shop-single-section section-padding">
                 <div className="container">

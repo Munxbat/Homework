@@ -13,13 +13,13 @@ import Ab from '../../images/about.jpg'
 const AboutPage = () => {
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'About Us'} pagesub={'About'} />
-            <About hclass={'wpo-about-area section-padding'} Ab={Ab} />
-            <ServiceSection hclass={"wpo-service-area"} ServiceBtn={true} />
+            <About hclass={'wpo-about-area-s4 section-padding'} Ab={Ab} />
+            <TeamSection hclass={'wpo-team-section-s2 section-padding'} SectionTitleShow={true} />
+            <ServiceSection hclass={"wpo-service-area-s2"} ServiceBtn={true} />
             <FunFact2 />
-            <TeamSection hclass={'wpo-team-section section-padding'} SectionTitleShow={true} />
-            <Footer hclass={'wpo-site-footer'} />
+            <Footer hclass={'wpo-site-footer-s2'} />
             <Scrollbar /> 
         </Fragment>
     )

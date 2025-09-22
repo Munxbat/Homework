@@ -16,7 +16,7 @@ const ErrorPage = (props) => {
 
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={404} pagesub={'404'} />
             <section className="error-404-section section-padding">
                 <div className="container">

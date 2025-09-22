@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../images/logo.svg'
+import Logo from './../../images/logo.svg'
 import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
@@ -50,18 +50,19 @@ const Header = (props) => {
                                         <li><Link to="/home">Home</Link></li>
                                         <li><Link onClick={ClickHandler} to="/about">About</Link></li>
                                         <li className="menu-item-has-children">
-                                            <Link to="#">Service</Link>
+                                            <Link to="/service">Service</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/service">Service</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-single/Air-Transport">Service Single</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-single/Consulting-Services">Consulting Services</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-single/International-Trading">International Trading</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-single/Transportation-Logistics">Transportation & Logistics</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
                                             <Link to="#">Products</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/project">Mining equipment</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-single/Special-Transport-Solutions">Mining Drills</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-single/Special-Transport-Solutions">Tires</Link></li>
+                                                <li><Link onClick={ClickHandler} to="#">Mining Drills</Link></li>
+                                                <li><Link onClick={ClickHandler} to="#">Heavy Tires</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">

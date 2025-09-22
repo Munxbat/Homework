@@ -13,7 +13,7 @@ const PricingPage = (props) => {
 
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Pricing Plan'} pagesub={'Pricing'} />
             <PricingSection />
             <Footer hclass={'wpo-site-footer'} />

@@ -14,7 +14,7 @@ const BlogDetailsLeftSiide = () => {
     const BlogDetails = blogs.find(item => item.slug === slug)
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={BlogDetails.title} pagesub={'Blog Single'} />
             <BlogSingle blLeft={'order-lg-1'} blRight={'order-lg-2'} />
             <Footer hclass={'wpo-site-footer'} />

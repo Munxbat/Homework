@@ -9,7 +9,7 @@ import Logo from '../../images/logo2.svg'
 const BlogPageFullwidth = () => {
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Latest News'} pagesub={'Blog'}/> 
             <BlogList blLeft={'d-none'} blRight={'col-lg-10 offset-lg-1'}/>
             <Footer hclass={'wpo-site-footer'} />

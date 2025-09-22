@@ -17,9 +17,7 @@ const SkillSection = (props) => {
                             <h2>Why choose <span>us?</span> </h2>
                         </div>
                         <div className="wpo-skill-progress">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula tristique pharetra
-                                vestibulum tortor purus. Fusce commodo egestas ipsum ac in nunc gravida. Etiam odio quam
-                                vitae est lacus, nulla lectus scelerisque. Varius tellus sapien quis ac.</p>
+                            <p>By choosing our services, you can reduce both capital expenditure and operational costs through flexible rental options, while gaining access to the latest equipment with advanced features and improved efficiency. In addition, our packages include expert technical support and maintenance, ensuring smooth operations at all times. Best of all, you can easily scale your fleet up or down to match your specific project requirements, giving you both efficiency and flexibility in one complete solution.</p>
                             <div className="wpo-progress-single">
                                 <h5 className="progress-title">Time Management</h5>
                                 <div className="progress">
@@ -37,7 +35,7 @@ const SkillSection = (props) => {
                                 <span className="progress-number">80%</span>
                             </div>
                             <div className="wpo-progress-single">
-                                <h5 className="progress-title">Machine Power</h5>
+                                <h5 className="progress-title">Revenue, Profit</h5>
                                 <div className="progress">
                                     <div className="progress-bar" style={{ width: '92%' }}>
                                     </div>

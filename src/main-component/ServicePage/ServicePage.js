@@ -9,7 +9,7 @@ import Logo from '../../images/logo2.svg'
 const ServicePage = () => {
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Service'} pagesub={'Service'} />
             <ServiceSection hclass={"wpo-service-area section-padding"} ServiceBtn={true} />
             <Footer hclass={'wpo-site-footer'} />

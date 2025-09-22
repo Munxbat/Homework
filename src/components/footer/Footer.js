@@ -29,8 +29,7 @@ const Footer = (props) => {
                                     <Link className="logo" to="/"><img src={logo} alt="" /></Link>
                                 </div>
                                 <p>
-                                    Blandit ipsum arcu donec auctor a, turpis vitae.
-                                    Egestas pretium euenim non euoeu dignissim nulla nunc quisque
+                                    We will work hard to provide our customers with satisfactory, fast, and reliable service.
                                 </p>
                                 <ul>
                                     <li><Link onClick={ClickHandler} to='#' ><i className="ti-facebook"></i></Link></li>
@@ -57,35 +56,37 @@ const Footer = (props) => {
                             </div>
                         </div>
                         <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div className="widget link-widget">
+                                <div className="widget-title">
+                                    <h3>Our Products</h3>
+                                </div>
+                                <ul>
+                                    {Services.slice(0, 3).map((item, index) => (
+                                        <li key={index}>
+                                            <Link onClick={ClickHandler} to={`/service-single/${item.slug}`}>
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget wpo-service-link-widget">
                                 <div className="widget-title">
                                     <h3>Contact Us</h3>
                                 </div>
                                 <div className="contact-ft">
                                     <ul>
-                                        <li><i className="fi flaticon-location"></i>68D, Belsion Town 2365 <br /> Fna city, LH 3656, USA</li>
-                                        <li><i className="fi flaticon-telephone"></i>+ 8 (123) 123 456 789 <br />
-                                            + 8 (123) 123 456 789</li>
-                                        <li><i className="fi flaticon-email"></i>indudus@gmail.com</li>
+                                        <li><i className="fi flaticon-location"></i>Shar tohoi, 34-district BZD <br /> Ulaanbaatar, Mongolia</li>
+                                        <li><i className="fi flaticon-telephone"></i>+ (976) 9811-7676</li>
+                                        <li><i className="fi flaticon-email"></i>info@optimize-inc.com</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="widget instagram">
-                                <div className="widget-title">
-                                    <h3>Our Gellery</h3>
-                                </div>
-                                <ul className="d-flex">
-                                    <li><img src={Img1} alt="" /></li>
-                                    <li><img src={Img2} alt="" /></li>
-                                    <li><img src={Img3} alt="" /></li>
-                                    <li><img src={Img4} alt="" /></li>
-                                    <li><img src={Img5} alt="" /></li>
-                                    <li><img src={Img6} alt="" /></li>
-                                </ul>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -94,8 +95,8 @@ const Footer = (props) => {
                     <div className="row">
                         <div className="col col-xs-12">
                             <ul>
-                                <li>&copy; 2023 Indudus Template. Design By <Link to="/">wpOceans</Link>. All Rights Reserved.</li>
-                                <li><Link onClick={ClickHandler} to='#' >Terms of use |</Link> <Link onClick={ClickHandler} to='#' >Privacy Environmental Policy</Link></li>
+                                <li>&copy; 2025 Optimize Inc LLC. All Rights Reserved.</li>
+                                {/* <li><Link onClick={ClickHandler} to='#' >Terms of use |</Link> <Link onClick={ClickHandler} to='#' >Privacy Environmental Policy</Link></li> */}
                             </ul>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ const ClickHandler = () => {
 const ProjectPage = () => {
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'Projects Page'} pagesub={'Projects'} />
             <section className='wpo-project-area s4 section-padding'>
                 <div className="container">

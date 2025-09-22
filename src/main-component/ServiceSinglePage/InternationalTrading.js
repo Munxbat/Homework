@@ -11,7 +11,7 @@ import Simag2 from '../../images/service-single/img2.jpg'
 import ContactForm from '../../components/ServiceContact/ServiceContact';
 import ServiceSidebar from '../../components/ServiceSidebar/ServiceSidebar';
 
-const ServiceSinglePage = (props) => {
+const InternationalTrading = (props) => {
 
 
     const { slug } = useParams()
@@ -22,7 +22,7 @@ const ServiceSinglePage = (props) => {
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={serviceDetails.title} pagesub={'Service Single'} />
 
-            <div className="wpo-service-single-area section-padding">
+            <div className="wpo-service-single-area-s2 section-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-12">
@@ -35,8 +35,7 @@ const ServiceSinglePage = (props) => {
                                         <h3>{serviceDetails.title}</h3>
                                     </div>
                                     <p>
-Our consulting service is designed to provide mining and industrial companies with strategic guidance, reliable solutions, and expert support. With years of experience in the supply of drilling bits, spare parts, and international trade, we help our clients optimize operations, reduce costs, and achieve sustainable growth.
-                                    </p>
+Our International Trading service connects local mining companies with global markets. We specialize in the import and export of drilling bits, mining spare parts, and industrial equipment, ensuring reliable access to high-quality products from trusted international suppliers.                                    </p>
                                     <div className="row mt-4">
                                         <div className="col-md-6 col-sm-6 col-12">
                                             <div className="wpo-p-details-img">
@@ -55,33 +54,33 @@ Our consulting service is designed to provide mining and industrial companies wi
                                         <h3>Our Capabilities</h3>
                                     </div>
                                     <ul>
-                                        <li>Provide tailored consulting for mining equipment and spare parts procurement. </li>
+                                        <li>Import and export of drilling tools, mining spare parts, and heavy equipment.</li>
 
-                                        <li>Develop strategies to optimize supply chain and reduce operational risks.</li>
+                                        <li>Strong partnerships with global manufacturers and distributors.</li>
 
-                                        <li>Facilitate international trade and logistics solutions for efficient delivery.</li>
+                                        <li>Streamlined customs clearance and compliance with international trade standards.</li>
 
-                                        <li>Offer technical insights for equipment performance improvement.</li>
+                                        <li>Efficient logistics and transportation solutions for timely delivery.</li>
 
-                                        <li>Deliver financial and market analysis for smarter investment decisions.</li></ul>
+                                        <li>Competitive sourcing to minimize costs and maximize profitability.</li></ul>
 
                                 </div>
                                 <div className="wpo-service-single-item">
                                     <div className="wpo-service-single-title">
                                         <h3>Our approach</h3>
                                     </div>
-                                        <p>We work closely with our clients to understand their specific needs and operational challenges. From equipment selection to logistics planning, our approach is practical, data-driven, and focused on creating measurable results. By combining local knowledge with global expertise, we ensure our clients stay competitive in a demanding industry.</p>
+                                        <p>We believe that international trade should be seamless and transparent. Our team manages the full process — from supplier selection and procurement to shipping and customs clearance — ensuring that our clients receive their products on time and within budget. With a deep understanding of both local and global markets, we act as a trusted bridge between suppliers and mining companies.</p>
                                 </div>
                                 <div className="wpo-service-single-item list-widget">
                                     <div className="wpo-service-single-title">
                                         <h3>Our Work Process</h3>
                                     </div>
                                     <ul>
-                                        <li>Assess client requirements and operational environment.</li>
-                                        <li>Identify cost-effective solutions and reliable suppliers..</li>
-                                        <li>Provide tailored recommendations for mining tools and spare parts.</li>
-                                        <li>Support contract negotiations and trade processes.</li>
-                                        <li>Monitor performance and deliver continuous improvement strategies.</li>
+                                        <li>Identify client requirements and match with trusted suppliers worldwide.</li>
+                                        <li>Negotiate favorable terms to secure cost-effective deals.</li>
+                                        <li>Handle import/export documentation and customs compliance.</li>
+                                        <li>Organize international logistics and freight forwarding.    </li>
+                                        <li>Deliver continuous support to guarantee successful long-term trade relations.</li>
                                     </ul>
                                 </div>
                                 <div className="wpo-service-single-item">
@@ -127,7 +126,7 @@ Our consulting service is designed to provide mining and industrial companies wi
         </Fragment>
     )
 };
-export default ServiceSinglePage;
+export default InternationalTrading;
 
 
 

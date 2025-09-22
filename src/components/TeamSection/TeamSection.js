@@ -31,9 +31,7 @@ const TeamSection = (props) => {
                                         <div className="social">
                                             <ul>
                                                 <li><Link onClick={ClickHandler} to="#"><i className="ti-facebook"></i></Link></li>
-                                                <li><Link onClick={ClickHandler} to="#"><i className="ti-twitter-alt"></i></Link></li>
-                                                <li><Link onClick={ClickHandler} to="#"><i className="ti-instagram"></i></Link></li>
-                                                <li><Link onClick={ClickHandler} to="#"><i className="ti-google"></i></Link></li>
+
                                             </ul>
                                         </div>
                                     </div>

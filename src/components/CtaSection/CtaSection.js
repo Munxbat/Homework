@@ -6,8 +6,8 @@ const CtaSection = (props) => {
             <div className="container">
                 <div className="wpo-subscribe-wrap">
                     <div className="subscribe-text">
-                        <h3>Subscribe to our newsletter to receive
-                            latest news on our services.</h3>
+                        <h3>Should you require any assistance or wish to establish direct collaboration, 
+                            please do not hesitate to contact us.</h3>
                     </div>
                     <div className="subscribe-form">
                         <form>

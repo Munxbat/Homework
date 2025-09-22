@@ -15,7 +15,7 @@ const BlogDetails = (props) => {
 
     return (
         <Fragment>
-            <NavbarS3 hclass={'wpo-site-header wpo-header-style-4'} Logo={Logo} />
+            <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={BlogDetails.title} pagesub={'Blog Single'} />
             <BlogSingle />
             <Footer hclass={'wpo-site-footer'} />

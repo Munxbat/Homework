@@ -29,14 +29,13 @@ const aboutS2 = (props) => {
                                                 </div>
                                                 <div className="wpo-about-info">
                                                     <div className="wpo-about-info-text">
-                                                        <h2>Jenny Wilson</h2>
-                                                        <span>CEO of BudyBay</span>
+                                                        <h2>Altantsetseg.A</h2>
+                                                        <span>CEO of Optimize inc</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="wpo-about-content">
-                                                <p>“Consectetur for adipiscing elited
-                                                    quam qufacilis peltesque.”</p>
+                                              <p>"We will work hard to provide our customers with satisfactory, fast, and reliable service."</p>
                                             </div>
                                         </div>
                                 </div>
@@ -47,16 +46,10 @@ const aboutS2 = (props) => {
                         <div className="wpo-about-text">
                             <div className="wpo-about-title">
                                 <span className="sub">About Us</span>
-                                <h2>We’re More than a <span>Industrial</span> Company</h2>
+                                <h2>EXECUTIVE<span>&nbsp;DIRECTOR'S&nbsp;</span> GREETINGS</h2>
                             </div>
-                            <h5>Industry can dolor siot amet, constetur adiping elit. Commodo adipiscing erat aliquam
-                                mauris morbioliotion adipiscing vulputate. Hendrerit laoreet vivea sodales odio commodo
-                                vulputate nunc.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis scelerisque quam sit
-                                at. Enim leo, eget adipiscing sagittis nec. Facilisi suscipit mi suscipit pharetra
-                                penatibus sed integer at congue. Book senectus nibh placerat justo in ultricies. Nunc
-                                varius facilisis posuere consectetur mauris integer integer sed sollicitudin. Egestas
-                                tristique eget arcu mattis eros dictumst.</p>
+                            <h5>We wish you a pleasant visit to our company website. Since its establishment, "Optimize Inc" LLC has been constantly expanding its activities in the fields of business consulting services, mining equipment supply, foreign trade, and transport and logistics.</h5>
+                            <p>As a way of expressing our gratitude to our customers who use the products and services offered by "Optimize Inc" LLC and grow together through mutually beneficial partnerships, our company warmly welcomes new customers and invites them to cooperate with us within the framework of our goal of "Build More Together"...</p>
                             <div className="btns">
                                 <Link onClick={ClickHandler} to="/about" className="theme-btn" >Discover More</Link>
                             </div>
