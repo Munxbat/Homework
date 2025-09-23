@@ -112,54 +112,84 @@ const Header = (props) => {
                                     </button>
                                 </div>
 
-                                {/* Mini Cart / Robot */}
-                                <div className="mini-cart">
-                                    <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
-                                        <RiRobot2Line size={24} />
-                                        <span className="cart-count">{carts.length}</span>
-                                    </button>
-
-                                    <div className={`mini-cart-content ${cartActive ? "mini-cart-content-toggle" : ""}`}>
-                                        <button className="mini-cart-close" onClick={() => setcartState(!cartActive)}>
-                                            <i className="ti-close"></i>
+                                        {/* Mini Cart / AI Robot */}
+                                        <div className="mini-cart">
+                                        <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
+                                            <RiRobot2Line size={24} />
+                                            <span className="cart-count">{carts.length}</span>
                                         </button>
 
-                                        <div className="mini-cart-items">
-                                            {carts && carts.length > 0 && carts.map((catItem, crt) => (
-                                                <div className="mini-cart-item clearfix" key={crt}>
-                                                    <div className="mini-cart-item-image">
-                                                        <span>
-                                                            <img src={catItem.proImg} alt="icon" />
-                                                        </span>
-                                                    </div>
-                                                    <div className="mini-cart-item-des">
-                                                        <p>{catItem.title}</p>
-                                                        <span className="mini-cart-item-price">
-                                                            ${catItem.price} x {catItem.qty}
-                                                        </span>
-                                                        <span className="mini-cart-item-quantity">
-                                                            <button
-                                                                onClick={() => props.removeFromCart(catItem.id)}
-                                                                className="btn btn-sm btn-danger"
-                                                            >
-                                                                <i className="ti-close"></i>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                </div>
+                                        <div className={`mini-cart-content ${cartActive ? "mini-cart-content-toggle" : ""}`}>
+                                            <button className="mini-cart-close" onClick={() => setcartState(!cartActive)}>
+                                            <i className="ti-close"></i>
+                                            </button>
+
+                                            {/* Chat messages display */}
+                                            <div className="mini-cart-items overflow-y-auto h-64 p-2">
+                                            {messages.map((m, i) => (
+                                                <div key={i} className="mb-1 text-sm">{m}</div>
                                             ))}
+                                            </div>
+
+                                            {/* Chat / Order input area */}
+                                            <div className="mini-cart-action mt-2 flex flex-col space-y-1">
+                                            {step === "chat" ? (
+                                                <div className="flex">
+                                                <input
+                                                    type="text"
+                                                    className="form-control flex-1 p-2 text-sm border"
+                                                    placeholder="Type here..."
+                                                    value={input}
+                                                    onChange={(e) => setInput(e.target.value)}
+                                                    onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                                                />
+                                                <button
+                                                    onClick={handleSend}
+                                                    className="bg-blue-500 text-white px-3 ml-1 rounded"
+                                                >
+                                                    Send
+                                                </button>
+                                                </div>
+                                            ) : (
+                                                <div className="flex flex-col space-y-1">
+                                                <input
+                                                    placeholder="Нэр"
+                                                    value={order.name}
+                                                    onChange={(e) => setOrder({ ...order, name: e.target.value })}
+                                                    className="w-full border p-1 text-sm"
+                                                />
+                                                <input
+                                                    placeholder="Имэйл"
+                                                    value={order.email}
+                                                    onChange={(e) => setOrder({ ...order, email: e.target.value })}
+                                                    className="w-full border p-1 text-sm"
+                                                />
+                                                <input
+                                                    placeholder="Утас"
+                                                    value={order.phone}
+                                                    onChange={(e) => setOrder({ ...order, phone: e.target.value })}
+                                                    className="w-full border p-1 text-sm"
+                                                />
+                                                <input
+                                                    type="number"
+                                                    min={1}
+                                                    placeholder="Тоо ширхэг"
+                                                    value={order.quantity}
+                                                    onChange={(e) => setOrder({ ...order, quantity: Number(e.target.value) })}
+                                                    className="w-full border p-1 text-sm"
+                                                />
+                                                <button
+                                                    onClick={handleOrderSubmit}
+                                                    className="w-full bg-green-500 text-white p-1 rounded"
+                                                >
+                                                    Захиалга илгээх
+                                                </button>
+                                                </div>
+                                            )}
+                                            </div>
+                                        </div>
                                         </div>
 
-                                        <div className="mini-cart-action clearfix">
-                                            <p>Hello, what can I help you?</p>
-                                            <input type="text" className="form-control" placeholder="Type here..." />
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        {/* End Right Section */}
 
                     </div>
                 </div>
