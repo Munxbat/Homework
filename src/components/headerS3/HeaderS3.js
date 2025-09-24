@@ -2,16 +2,27 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import Logo from './../../images/logo.svg'
-import { totalPrice } from "../../utils";
-import { connect } from "react-redux";
-import { removeFromCart } from "../../store/actions/action";
-import { RiRobot2Line } from "react-icons/ri";
-import MiningDrills from '../../main-component/Products/MiningDrills';
+import { connect } from "react-redux"
+import { removeFromCart } from "../../store/actions/action"
+import { RiRobot2Line } from "react-icons/ri"
+import ChatBot from "../ChatWidget/OpenAI"
+import ChatBotMiniCart from '../ChatWidget/ChatBotMiniCart'
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
     const [cartActive, setcartState] = useState(false);
     const [lang, setLang] = useState("mn"); // default: монгол
+
+    // ⬇️ Chat болон Order-тэй холбоотой state-ууд
+    const [messages, setMessages] = useState([]);
+    const [step, setStep] = useState("chat"); // "chat" эсвэл "order"
+    const [input, setInput] = useState("");
+    const [order, setOrder] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        quantity: 1,
+    });
 
     const SubmitHandler = (e) => {
         e.preventDefault();
@@ -24,6 +35,25 @@ const Header = (props) => {
 
     const toggleLang = () => {
         setLang((prev) => (prev === "mn" ? "en" : "mn"));
+    };
+
+    // Chat илгээх функц
+    const handleSend = () => {
+        if (!input.trim()) return;
+        setMessages((prev) => [...prev, `You: ${input}`]);
+        setInput("");
+        // Жишээ: AI chatbot-н хариу
+        setTimeout(() => {
+            setMessages((prev) => [...prev, "🤖: Таны асуулт хүлээн авлаа"]);
+        }, 500);
+    };
+
+    // Захиалга илгээх функц
+    const handleOrderSubmit = () => {
+        console.log("Order Submitted:", order);
+        setMessages((prev) => [...prev, `✅ Захиалга амжилттай илгээгдлээ (${order.quantity}ш)`]);
+        setStep("chat"); // буцаад чат руу оруулах
+        setOrder({ name: "", email: "", phone: "", quantity: 1 });
     };
 
     const { carts } = props;
@@ -63,7 +93,7 @@ const Header = (props) => {
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/MiningEquipment">Mining equipment</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/MiningDrills">Mining Drills</Link></li>
-                                                <li><Link onClick={ClickHandler} to="HeavyTires">Heavy Tires</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/HeavyTires">Heavy Tires</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
@@ -112,85 +142,34 @@ const Header = (props) => {
                                     </button>
                                 </div>
 
-                                        {/* Mini Cart / AI Robot */}
-                                        <div className="mini-cart">
-                                        <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
-                                            <RiRobot2Line size={24} />
-                                            <span className="cart-count">{carts.length}</span>
+                                {/* Mini Cart / AI Robot */}
+                                <div className="mini-cart">
+                                    <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
+                                        <RiRobot2Line size={24} />
+                                        <span className="cart-count">{carts.length}</span>
+                                    </button>
+
+                                    <div className={`mini-cart-content ${cartActive ? "mini-cart-content-toggle" : ""}`}>
+                                        <button className="mini-cart-close" onClick={() => setcartState(!cartActive)}>
+                                            <i className="ti-close"></i>
                                         </button>
 
-                                        <div className={`mini-cart-content ${cartActive ? "mini-cart-content-toggle" : ""}`}>
-                                            <button className="mini-cart-close" onClick={() => setcartState(!cartActive)}>
-                                            <i className="ti-close"></i>
-                                            </button>
-
-                                            {/* Chat messages display */}
-                                            <div className="mini-cart-items overflow-y-auto h-64 p-2">
+                                        {/* Chat messages display */}
+                                        <div className="mini-cart-items overflow-y-auto h-64 p-2">
                                             {messages.map((m, i) => (
                                                 <div key={i} className="mb-1 text-sm">{m}</div>
                                             ))}
-                                            </div>
-
-                                            {/* Chat / Order input area */}
-                                            <div className="mini-cart-action mt-2 flex flex-col space-y-1">
-                                            {step === "chat" ? (
-                                                <div className="flex">
-                                                <input
-                                                    type="text"
-                                                    className="form-control flex-1 p-2 text-sm border"
-                                                    placeholder="Type here..."
-                                                    value={input}
-                                                    onChange={(e) => setInput(e.target.value)}
-                                                    onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                                                />
-                                                <button
-                                                    onClick={handleSend}
-                                                    className="bg-blue-500 text-white px-3 ml-1 rounded"
-                                                >
-                                                    Send
-                                                </button>
-                                                </div>
-                                            ) : (
-                                                <div className="flex flex-col space-y-1">
-                                                <input
-                                                    placeholder="Нэр"
-                                                    value={order.name}
-                                                    onChange={(e) => setOrder({ ...order, name: e.target.value })}
-                                                    className="w-full border p-1 text-sm"
-                                                />
-                                                <input
-                                                    placeholder="Имэйл"
-                                                    value={order.email}
-                                                    onChange={(e) => setOrder({ ...order, email: e.target.value })}
-                                                    className="w-full border p-1 text-sm"
-                                                />
-                                                <input
-                                                    placeholder="Утас"
-                                                    value={order.phone}
-                                                    onChange={(e) => setOrder({ ...order, phone: e.target.value })}
-                                                    className="w-full border p-1 text-sm"
-                                                />
-                                                <input
-                                                    type="number"
-                                                    min={1}
-                                                    placeholder="Тоо ширхэг"
-                                                    value={order.quantity}
-                                                    onChange={(e) => setOrder({ ...order, quantity: Number(e.target.value) })}
-                                                    className="w-full border p-1 text-sm"
-                                                />
-                                                <button
-                                                    onClick={handleOrderSubmit}
-                                                    className="w-full bg-green-500 text-white p-1 rounded"
-                                                >
-                                                    Захиалга илгээх
-                                                </button>
-                                                </div>
-                                            )}
-                                            </div>
-                                        </div>
                                         </div>
 
-
+                                        {/* Chat / Order input area */}
+                                            <div className="header-right">
+                                            <ChatBot carts={carts} />
+                                            <ChatBotMiniCart carts={carts} />
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
