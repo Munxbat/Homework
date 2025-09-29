@@ -1,0 +1,22 @@
+{
+  "home": "Home",
+  "about": "About",
+  "service": "Service",
+  "products": "Products",
+  "pages": "Pages",
+  "contact": "Contact",
+  "search_placeholder": "Search here...",
+  "consulting_services": "Consulting Services",
+  "international_trading": "International Trading",
+  "transportation_logistics": "Transportation & Logistics",
+  "shop": "Shop",
+  "shop_single": "Shop Single",
+  "cart": "Cart",
+  "checkout": "Checkout",
+  "pricing": "Pricing",
+  "team_single": "Team Single",
+  "error_404": "404 Error",
+  "chat_greeting_logged_in": "Hello! Need help?",
+  "chat_greeting_logged_out": "Chat with us!"
+  
+}

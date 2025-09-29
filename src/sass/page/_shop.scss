@@ -2,6 +2,9 @@
 14. wpo-shop-page
 --------------------------------------------------------------*/
 .wpo-shop-section {
+
+	background: #121418; /* Dark background for the shop section */
+	
 	.shop-grids {
 		margin: 0 -15px;
 
@@ -35,7 +38,9 @@
 	}
 
 	.details {
-		box-shadow: 0px 2px 10px 2px rgba(21, 44, 88, 0.05);
+		background: #1e222d; /* Dark background */
+		color: #ffffff; /* White text */
+		box-shadow: 0px 2px 10px 2px rgba(255, 255, 255, 0.1); /* Adjusted shadow for dark theme */
 		text-align: center;
 		padding: 35px 15px;
 
@@ -44,6 +49,7 @@
 			font-size: calc-rem-value(25);
 			margin: 0 0 0.5em;
 			font-weight: 700;
+			color: #ffffff; /* White text for heading */
 
 			@include media-query(991px) {
 				font-size: 16px;
@@ -52,20 +58,21 @@
 		}
 
 		h3 a {
-			color: $heading-color;
+			color: #ffffff; /* White text for links */
 		}
 
 		h3 a:hover {
-			color: $theme-primary-color;
+			color: $theme-primary-color; /* Keep theme primary color for hover */
 		}
 
 		del {
-			color: $text-color;
+			color: #cccccc; /* Lighter gray for strikethrough text */
 		}
 
 		del+span {
 			display: inline-block;
 			padding-left: 20px;
+			color: #ffffff; /* White text for price */
 		}
 	}
 
@@ -77,7 +84,7 @@
 			font-size: 15px;
 			font-size: calc-rem-value(15);
 			font-weight: 600;
-			color: $theme-primary-color;
+			color: $theme-primary-color; /* Keep primary color for button text */
 			padding: 12px 20px;
 			border: 2px solid $theme-primary-color;
 			display: inline-block;
@@ -93,7 +100,7 @@
 
 		span:hover {
 			background-color: $theme-primary-color;
-			color: $white;
+			color: #ffffff; /* White text on hover */
 		}
 
 		span i {
@@ -101,11 +108,12 @@
 			font-size: calc-rem-value(15);
 			display: inline-block;
 			padding-left: 5px;
+			color: #ffffff; /* White icon */
 		}
 	}
 
 	.grid:hover .add-to-cart span {
 		background-color: $theme-primary-color;
-		color: $white;
+		color: #ffffff; /* White text on hover */
 	}
 }

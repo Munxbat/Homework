@@ -9,12 +9,14 @@ import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logo2.svg'
 import Ab from '../../images/about.jpg'
+import Ticker from '../../components/Metal/Ticker';
 
 const AboutPage = () => {
     return (
         <Fragment>
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={'About Us'} pagesub={'About'} />
+            <Ticker />
             <About hclass={'wpo-about-area-s4 section-padding'} Ab={Ab} />
             <TeamSection hclass={'wpo-team-section-s2 section-padding'} SectionTitleShow={true} />
             <ServiceSection hclass={"wpo-service-area-s2"} ServiceBtn={true} />

@@ -4,50 +4,24 @@ import AboutS2 from '../../components/aboutS2/aboutS2';
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
 import ServiceSectionS2 from '../../components/ServiceSectionS2/ServiceSectionS2';
 import SkillSection from '../../components/SkillSection/SkillSection';
-import ProjectSection from '../../components/ProjectSection/ProjectSection';
 import Testimonial from '../../components/Testimonial/Testimonial';
-import BlogSection from '../../components/BlogSection/BlogSection';
 import CtaSection from '../../components/CtaSection/CtaSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import SImg from '../../images/skill2.jpg'
 import HeroSection from '../../components/HeroSlider/Herosection';
+import Ticker from '../../components/Metal/Ticker';
+import ChatSection from '../../components/Messenger/ChatSection';
+
 
 const HomePage = () => {
-const heroData = [
-  {
-    bgUrl: '/images/hero_slider_1.jpeg',
-    titleUp: 'Optimize inc',
-    title: 'BUILD MORE TOGETHER',
-    subTitle:
-      '',
-    btnText: 'More...',
-    btnUrl: '/contact',
-  },
-  {
-    bgUrl: '/images/hero_slider_2.jpeg',
-    titleUp: 'Optimize inc',
-    title: 'BUILD MORE TOGETHER',
-    subTitle:
-      '',
-    btnText: 'More...',
-    btnUrl: '/contact',
-  },
-  {
-    bgUrl: '/images/hero_slider_3.jpeg',
-    titleUp: 'Optimize inc',
-    title: 'BUILD MORE TOGETHER',
-    subTitle:
-      '',
-    btnText: 'More...',
-    btnUrl: '/contact',
-  },
-];
+
 
     return (
         <Fragment>
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} />
-            <HeroSection  data={heroData}/>
+            <HeroSection />
+            <Ticker />
             <AboutS2 hclass={'wpo-about-area-s4 section-padding'}/>
             <FeaturesSection hclass={'wpo-features-area-s2 section-padding'} />
             <ServiceSectionS2 hclass={"wpo-service-area-s2"} ServiceBtn={true} />
@@ -58,6 +32,8 @@ const heroData = [
             <CtaSection hclass={'wpo-subscribe-section-s2 section-bg'} />
             <Footer hclass={'wpo-site-footer-s2'} />
             <Scrollbar />
+            <ChatSection />
+
         </Fragment>
     )
 };

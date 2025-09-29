@@ -9,7 +9,8 @@ import './css/themify-icons.css';
 import './css/animate.css';
 import './css/flaticon.css';
 import './sass/style.scss';
-
+import './i18n';
+import './main-component/Search/Search'; // Ensure Search component is included
 
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";

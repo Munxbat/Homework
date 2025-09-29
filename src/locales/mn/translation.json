@@ -1,0 +1,21 @@
+{
+  "home": "Нүүр",
+  "about": "Бидний тухай",
+  "service": "Үйлчилгээ",
+  "products": "Бүтээгдэхүүн",
+  "pages": "Хуудсууд",
+  "contact": "Холбоо барих",
+  "search_placeholder": "Эндээс хай...",
+  "consulting_services": "Зөвлөх үйлчилгээ",
+  "international_trading": "Олон улсын худалдаа",
+  "transportation_logistics": "Тээвэр ба Логистик",
+  "shop": "Дэлгүүр",
+  "shop_single": "Дэлгүүрийн дэлгэрэнгүй",
+  "cart": "Сагс",
+  "checkout": "Төлбөр тооцоо",
+  "pricing": "Үнийн санал",
+  "team_single": "Багийн гишүүн",
+  "error_404": "404 Алдаа",
+  "chat_greeting_logged_in": "Сайн байна уу? Тусламж хэрэгтэй юу?",
+  "chat_greeting_logged_out": "Бидэнтэй чатлаарай!"
+}

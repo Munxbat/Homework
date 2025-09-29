@@ -1,0 +1,16 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  width: calc(90% - 40px);
+  margin: 0 auto;
+  padding: 0;
+
+  min-height: 100vh;
+
+  /* pointer-events: none; */ /* устгах */
+  background-color: rgba(186, 49, 49, 0);
+}

@@ -17,7 +17,7 @@ const BlogDetailsFull = () => {
             <NavbarS3 hclass={'wpo-site-header wpo-header-style-2'} Logo={Logo} />
             <PageTitle pageTitle={BlogDetails.title} pagesub={'Blog Single'} />
             <BlogSingle blLeft={'d-none'} blRight={'col-lg-10 offset-lg-1'} />
-            <Footer hclass={'wpo-site-footer'} />
+            <Footer hclass={'wpo-site-footer-s2'} />
             <Scrollbar />
         </Fragment>
     )

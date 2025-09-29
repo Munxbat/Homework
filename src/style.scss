@@ -1,3 +1,16 @@
 p{
     color: red;
 }
+.ticker-text {
+  position: relative;
+  z-index: 10; /* Урд талд гаргах */
+  color: white; /* Уг текстийн өнгө */
+}
+.background {
+  position: absolute;
+  z-index: 1; /* Цаад талд байх */
+  background-color: #ff4500; /* Улаан талын өнгө */
+  width: 50%;
+  height: 100%;
+  right: 0;
+}

@@ -124,9 +124,10 @@ const ContactForm = () => {
                     onChange={handleChange}
                 >
                     <option disabled="disabled" value="">Subject</option>
-                    <option>Mechanical Engineering</option>
+                    <option>Mining industry</option>
                     <option>Petroleum Refinery</option>
                     <option>Power & Energy</option>
+                    <option>Transportion logistic</option>
                 </select>
                 {formErrors.subject && <span className="invalid-feedback">{formErrors.subject}</span>}
             </div>

@@ -1,6 +1,6 @@
 ul.smothscroll {
     position: fixed;
-    bottom: 25px;
+    bottom: 45px;
     right: 30px;
     list-style: none;
     z-index: 99;

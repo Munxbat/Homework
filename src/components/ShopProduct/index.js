@@ -1,25 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const ShopProduct = ({ products, addToCartProduct }) => {
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     };
 
     return (
-
         <div className="shop-grids clearfix">
             {products.length > 0 &&
                 products.slice(0, 6).map((product, pitem) => (
                     <div className="grid" key={pitem}>
                         <div className="img-holder">
-                            <img src={product.proImg} alt="" />
+                            <img src={product.image} alt={product.name} />
                         </div>
                         <div className="details">
-                            <h3><Link onClick={ClickHandler} to={`/shop-single/${product.slug}`}>{product.title}</Link></h3>
-                            <del>${product.delPrice}</del>
-                            <span>${product.price}</span>
+                            <h3>
+                                <Link onClick={ClickHandler} to={`/shop-single/${product.id}`}>
+                                    {product.name}
+                                </Link>
+                            </h3>
+                            <p>{product.description}</p>
                             <div className="add-to-cart">
                                 <span
                                     data-bs-toggle="tooltip"
@@ -27,7 +28,7 @@ const ShopProduct = ({ products, addToCartProduct }) => {
                                     title="Add to Cart"
                                     onClick={() => addToCartProduct(product)}
                                 >
-                                    Add to cart
+                                    Place an order
                                     <i className="ti-shopping-cart"></i>
                                 </span>
                             </div>

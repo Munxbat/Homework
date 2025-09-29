@@ -49,18 +49,8 @@ const MiningDrills = ({ addToCartProduct }) => {
                                         {product.title}
                                     </Link>
                                 </h3>
-                                <del>${product.delPrice}</del>
                                 <span>${product.price}</span>
                                 <div className="add-to-cart">
-                                    <span
-                                        data-bs-toggle="tooltip"
-                                        data-bs-html="true"
-                                        title="Add to Cart"
-                                        onClick={() => addToCartProduct(product)}
-                                    >
-                                        Add to cart
-                                        <i className="ti-shopping-cart"></i>
-                                    </span>
                                 </div>
                             </div>
                         ))

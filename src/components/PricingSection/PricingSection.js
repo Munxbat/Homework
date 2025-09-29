@@ -8,31 +8,65 @@ const ClickHandler = () => {
 };
 
 // Individual Pricing Card Component
-// Individual Pricing Card Component
 const PricingCard = ({ plan, price, features, description, link }) => {
     return (
         <div className="col col-lg-4 col-md-6 col-12">
-            <div className="wpo-pricing-item" style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div 
+                className="wpo-pricing-item" 
+                style={{ 
+                    height: '100%', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    justifyContent: 'space-between',
+                    backgroundColor: '#000',    // 🔥 Хар background
+                    color: '#ffffffff',              // 🔥 Цагаан текст
+                    borderRadius: '12px',       // Зөөлөн булан
+                    padding: '20px',
+                    boxShadow: '0 4px 20px rgba(51, 51, 51, 0.5)' 
+                }}
+            >
                 <div className="wpo-pricing-top">
-                    <div className="pricing-thumb">
-                        <span>{plan}</span>
+                    <div 
+                        className="pricing-thumb" 
+                        style={{ backgroundColor: '#fe543eff', borderRadius: '8px', padding: '5px 20px' }}
+                    >
+                        <span style={{ color: '#ffffffff' }}>{plan}</span>
                     </div>
                     <div className="wpo-pricing-text" style={{textAlign:"center"}}>
-                        <h2 style={{display: "block"}}>
+                        <h2 style={{display: "block", color:"#fff"}}>
                             {price}
-                            <span><br />Available for customization</span>
+                            <span style={{ display: "block", fontSize: "14px", color:"#ccc" }}>
+                                Available for customization
+                            </span>
                         </h2>
-                        <p>{description}</p>
+                        <p style={{ color: "#ddd" }}>{description}</p>
                     </div>
                 </div>
                 <div className="wpo-pricing-bottom">
                     <div className="wpo-pricing-bottom-text" style={{textAlign:"center", marginBottom:"20px"}}>
-                        <ul style={{ display: 'flex', gap: '10px', padding: 0, margin: 0, listStyle: 'none', flexWrap: 'wrap', justifyContent: 'center' }}>
+                        <ul style={{ display: 'flex', gap: '10px', padding: 0, margin: 0, listStyle: 'none', flexWrap: 'wrap', justifyContent: 'center', color:"#fff" }}>
                             {features.map((feature, fIndex) => (
                                 <li key={fIndex}>{feature}</li>
                             ))}
                         </ul>
-                        <Link onClick={ClickHandler} to={link}>CHOOSE PLAN</Link>
+                        <Link 
+                            onClick={ClickHandler} 
+                            to={link}
+                            style={{
+                                display: "inline-block",
+                                marginTop: "15px",
+                                padding: "10px 25px",
+                                border: "1px solid #fff",
+                                borderRadius: "6px",
+                                color: "#fff",
+                                textDecoration: "none",
+                                transition: "0.3s"
+                            }}
+                            onMouseOver={(e)=> e.target.style.backgroundColor="#fe543eff"}
+                            onMouseOut={(e)=> e.target.style.backgroundColor="transparent"}
+                        >
+                            Show More
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -47,7 +81,7 @@ const PricingSection = () => {
             plan: 'Suggestions',
             price: 'Mining Equipment',
             description: 'High-performance mining equipment for efficiency and durability.',
-            link: '/equipment',  // энд линк
+            link: '/MiningEquipment',
             features: [
                 'Advanced automation systems',
                 'Robust construction',
@@ -60,7 +94,7 @@ const PricingSection = () => {
             plan: 'Suggestions',
             price: 'Mining Drills',
             description: 'High-performance mining drills designed for efficiency and durability. Perfect for small to medium-scale operations.',
-            link: '/drills',  // энд линк
+            link: '/MiningDrills',
             features: [
                 'General living space advices',
                 'Complete Petroleum Refinery',
@@ -73,7 +107,7 @@ const PricingSection = () => {
             plan: 'Suggestions',
             price: 'Heavy Tires',
             description: 'Durable heavy tires ideal for mining & construction vehicles.',
-            link: '/tires',  // энд линк
+            link: '/HeavyTires',
             features: [
                 'High load capacity',
                 'Wear-resistant materials',
@@ -85,10 +119,10 @@ const PricingSection = () => {
     ];
 
     return (
-        <section className="wpo-pricing-section section-padding">
+        <section className="wpo-pricing-section-s2 section-padding" style={{ backgroundColor: "#111", padding: "60px 0" }}>
             <div className="container">
                 <div className="row">
-                    <SectionTitle subtitle={'Pricing Plan'} title={'Choose Your Optimal'} titleColor={'Plan'} />
+                    <SectionTitle subtitle={'Product Plans'} title={'Choose Your Optimal'} titleColor={'Plan'} />
                 </div>
                 <div className="wpo-pricing-wrap">
                     <div className="row">
@@ -99,7 +133,7 @@ const PricingSection = () => {
                                 price={plan.price}
                                 features={plan.features}
                                 description={plan.description}
-                                link={plan.link}  // линк дамжуулж байна
+                                link={plan.link}  
                             />
                         ))}
                     </div>

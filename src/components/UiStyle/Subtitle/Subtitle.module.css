@@ -1,0 +1,13 @@
+.Container {
+  margin: 0 auto;
+    margin-left: 40px;
+  padding: 0;
+    width: calc(90% - 40px); 
+text-transform: uppercase;
+  text-align: center;
+  font-size: 1.75rem;
+    display: flex;
+  align-items: center;   
+  letter-spacing: 0.1rem;
+  color: white;
+}
