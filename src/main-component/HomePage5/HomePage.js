@@ -26,9 +26,9 @@ const HomePage = () => {
             <FeaturesSection hclass={'wpo-features-area-s2 section-padding'} />
             <ServiceSectionS2 hclass={"wpo-service-area-s2"} ServiceBtn={true} />
             <SkillSection hclass={'wpo-skill-section-s2 section-padding'} Akimg={SImg} />
-            {/* <ProjectSection hclass={'wpo-project-area-s3'} SectionTitleShow={true} /> */}
+            
             <Testimonial hclass={'wpo-testimonial-area-s3 section-padding'} />
-            {/* <BlogSection hclass={'wpo-blog-section-s3 section-padding'} /> */}
+ 
             <CtaSection hclass={'wpo-subscribe-section-s2 section-bg'} />
             <Footer hclass={'wpo-site-footer-s2'} />
             <Scrollbar />

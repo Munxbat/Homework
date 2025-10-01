@@ -17,6 +17,187 @@
   "team_single": "Team Single",
   "error_404": "404 Error",
   "chat_greeting_logged_in": "Hello! Need help?",
-  "chat_greeting_logged_out": "Chat with us!"
+  "chat_greeting_logged_out": "Chat with us!",
+  "about_us": "About Us",
   
+  "aboutS2": {
+    "subTitle": "About Us",
+    "title": "<span>DIRECTOR'S&nbsp;</span> GREETINGS",
+    "greeting": "We wish you a pleasant visit to our company website. Since its establishment, \"Optimize Inc\" LLC has been constantly expanding its activities in the fields of business consulting services, mining equipment supply, foreign trade, and transport and logistics.",
+    "description": "As a way of expressing our gratitude to our customers who use the products and services offered by \"Optimize Inc\" LLC and grow together through mutually beneficial partnerships, our company warmly welcomes new customers and invites them to cooperate with us within the framework of our goal of \"Build More Together\"...",
+    "ceoName": "Altantsetseg.A",
+    "ceoTitle": "CEO of Optimize inc",
+    "ceoQuote": "\"We will work hard to provide our customers with satisfactory, fast, and reliable service.\"",
+    "discoverMore": "Discover More",
+    "ourservices": "Our Services"
+  },
+  
+  "features": {
+    "technology": {
+      "title": "Advanced Technology",
+      "description": "We provide access to state-of-the-art mining equipment and drilling tools with advanced features, ensuring higher efficiency, reliability, and productivity for your mining operations globally."
+    },
+    "support": {
+      "title": "24/7 Customer Support",
+      "description": "Our dedicated team provides round-the-clock technical assistance and consulting, ensuring that your mining operations run smoothly and any issues are resolved promptly."
+    },
+    "engineers": {
+      "title": "Expert Engineers",
+      "description": "Our team of highly skilled engineers provides professional guidance and technical solutions for mining equipment, drilling tools, and spare parts to ensure optimal performance and efficiency."
+    }
+  },
+
+  
+  "services": {
+    "consulting": {
+      "title": "Consulting Services",
+      "description": "We provide expert consulting in strategy, planning, and management to optimize your business operations."
+    },
+    "trading": {
+      "title": "International Trading",
+      "description": "Comprehensive trading solutions, from import and export to global supply chain management."
+    },
+    "logistics": {
+      "title": "Transportation & Logistics",
+      "description": "Efficient transportation and logistics services with trucks, cranes, and local delivery options."
+    }
+  },
+  "section": {
+    "services": {
+      "subtitle": "Our Services",
+      "title": "Best solutions here",
+      "highlight": "Services"
+    }
+  },
+  
+  "skill": {
+    "subtitle": "Our Skill",
+    "title": "Why choose <span>us?</span>",
+    "description": "By choosing our services, you can reduce both capital expenditure and operational costs through flexible rental options, while gaining access to the latest equipment with advanced features and improved efficiency. In addition, our packages include expert technical support and maintenance, ensuring smooth operations at all times. Best of all, you can easily scale your fleet up or down to match your specific project requirements, giving you both efficiency and flexibility in one complete solution.",
+    "progress": {
+      "time": {
+        "title": "Time Management",
+        "value": 75
+      },
+      "ability": {
+        "title": "Working Ability",
+        "value": 80
+      },
+      "revenue": {
+        "title": "Revenue, Profit",
+        "value": 92
+      }
+    }
+  },
+  "testimonials": [
+          {
+            "id": "01",
+            "des": "We have been using Optimize Inc.'s drill bits and mining spare parts for many years. Their high-quality products and reliable service have played a vital role in ensuring efficient and uninterrupted operations in our projects.",
+            "title": "Bat-Erdene T.",
+            "sub": "CEO, Erdenet Mining Corporation"
+          },
+          {
+            "id": "02",
+            "des": "Optimize Inc.'s cooperation in foreign trade and spare parts supply is highly valuable to us. Their direct collaboration with international suppliers ensures fast and reliable delivery of orders.",
+            "title": "Jenefer Haiway",
+            "sub": "Procurement Director, Caterpillar Mongolia LLC"
+          },
+          {
+            "id": "03",
+            "des": "Optimize Inc. consistently supports us with maintenance and spare parts supply for our mining drilling equipment. Their technical support and flexible services perfectly match our project and operational needs.",
+            "title": "Ganbold Ch.",
+            "sub": "Operations Manager, Oyu Tolgoi LLC"
+          }
+  ],
+  "cta": {
+    "title": "Should you require any assistance or wish to establish direct collaboration, please do not hesitate to contact us.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "email_error": "Please enter a valid email address.",
+    "success_message": "Thank you for subscribing!"
+  },
+"footer": {
+    "logo_alt": "Optimize Inc Logo",
+    "about_description": "We will work hard to provide our customers with satisfactory, fast, and reliable service.",
+    "services_title": "Our Services",
+    "products_title": "Our Products",
+    "contact_title": "Contact Us",
+    "contact": {
+      "address": "Shar tohoi, 20-district BZD, Ulaanbaatar, Mongolia",
+      "phone": "+ (976) 9811-7676",
+      "email": "info@optimize-inc.com"
+    },
+    "social": {
+      "facebook": "#",
+      "facebook_label": "Follow us on Facebook",
+      "twitter": "#",
+      "twitter_label": "Follow us on Twitter",
+      "instagram": "#",
+      "instagram_label": "Follow us on Instagram",
+      "google": "#",
+      "google_label": "Follow us on Google"
+    },
+    "copyright": "© {{year}} Optimize Inc LLC. All Rights Reserved.",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  "PageTitles": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Our Services",
+    "products": "Our Products",
+    "team": "Our Team"
+    
+  },
+  "team1": {
+    "title": "Our Expert Team",
+    "member": "Members",
+    "tsog": "Tsog Gunsen",
+    "tsog_sub": "Founder & Consultant",
+    "Dong-gun": "Song Dong-gun",
+    "Dong-gun_sub": "Partner & Consultant",
+    "Altanshagai": "Altanshagai.E",
+    "Altanshagai_sub": "Partner & Consultant"
+  },
+  "service_single": {
+      "pagesub": "Service Single",
+      "capabilities_title": "Our Capabilities",
+      "approach_title": "Our Approach",
+      "work_process_title": "Our Work Process",
+      "related_service_title": "Related Service",
+      "contact_title": "Have project in mind? Let's discuss",
+      "contact_subtitle": "Get in touch with us to see how we can help you with your project",
+      "trading": {
+        "description": "Our International Trading service connects local mining companies with global markets. We specialize in the import and export of drilling bits, mining spare parts, and industrial equipment, ensuring reliable access to high-quality products from trusted international suppliers.",
+        "capabilities": [
+          "Import and export of drilling tools, mining spare parts, and heavy equipment.",
+          "Strong partnerships with global manufacturers and distributors.",
+          "Streamlined customs clearance and compliance with international trade standards.",
+          "Efficient logistics and transportation solutions for timely delivery.",
+          "Competitive sourcing to minimize costs and maximize profitability."
+        ],
+        "approach": "We believe that international trade should be seamless and transparent. Our team manages the full process — from supplier selection and procurement to shipping and customs clearance — ensuring that our clients receive their products on time and within budget. With a deep understanding of both local and global markets, we act as a trusted bridge between suppliers and mining companies.",
+        "work_process": [
+          "Identify client requirements and match with trusted suppliers worldwide.",
+          "Negotiate favorable terms to secure cost-effective deals.",
+          "Handle import/export documentation and customs compliance.",
+          "Organize international logistics and freight forwarding.",
+          "Deliver continuous support to guarantee successful long-term trade relations."
+        ]
+      }
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+  

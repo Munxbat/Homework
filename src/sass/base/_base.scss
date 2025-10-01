@@ -17,6 +17,7 @@ body {
     }
 }
 
+
 p {
     font-size: 18px;
     color: $body-color;
@@ -31,7 +32,9 @@ h5,
 h6 {
     color: $heading-color;
     font-family: $heading-font;
-    font-weight: 600;
+    font-weight: 800;
+    margin: 0;
+  line-height: 1.2;
 }
 
 ul {

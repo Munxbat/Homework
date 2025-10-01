@@ -1,9 +1,13 @@
 import React from 'react';
 import FunFactSection from '../FunFact/FunFact';
+import { useTranslation } from 'react-i18next';
 
 const SkillSection = (props) => {
+    const { t } = useTranslation();
+    const progress = t('skill.progress', { returnObjects: true });
+
     return (
-        <section className={"" +props.hclass}>
+        <section className={"" + props.hclass}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5">
@@ -13,35 +17,21 @@ const SkillSection = (props) => {
                     </div>
                     <div className="col-lg-7 col-md-12 col-12">
                         <div className="wpo-section-title-s2">
-                            <p>Our Skill</p>
-                            <h2>Why choose <span>us?</span> </h2>
+                            <p>{t('skill.subtitle')}</p>
+                            <h2 dangerouslySetInnerHTML={{ __html: t('skill.title') }} />
                         </div>
                         <div className="wpo-skill-progress">
-                            <p>By choosing our services, you can reduce both capital expenditure and operational costs through flexible rental options, while gaining access to the latest equipment with advanced features and improved efficiency. In addition, our packages include expert technical support and maintenance, ensuring smooth operations at all times. Best of all, you can easily scale your fleet up or down to match your specific project requirements, giving you both efficiency and flexibility in one complete solution.</p>
-                            <div className="wpo-progress-single">
-                                <h5 className="progress-title">Time Management</h5>
-                                <div className="progress">
-                                    <div className="progress-bar" style={{ width: '75%' }}>
+                            <p>{t('skill.description')}</p>
+
+                            {Object.values(progress).map((item, idx) => (
+                                <div className="wpo-progress-single" key={idx}>
+                                    <h5 className="progress-title">{item.title}</h5>
+                                    <div className="progress">
+                                        <div className="progress-bar" style={{ width: `${item.value}%` }} />
                                     </div>
+                                    <span className="progress-number">{item.value}%</span>
                                 </div>
-                                <span className="progress-number">75%</span>
-                            </div>
-                            <div className="wpo-progress-single">
-                                <h5 className="progress-title">Working Ability</h5>
-                                <div className="progress">
-                                    <div className="progress-bar" style={{ width: '80%' }}>
-                                    </div>
-                                </div>
-                                <span className="progress-number">80%</span>
-                            </div>
-                            <div className="wpo-progress-single">
-                                <h5 className="progress-title">Revenue, Profit</h5>
-                                <div className="progress">
-                                    <div className="progress-bar" style={{ width: '92%' }}>
-                                    </div>
-                                </div>
-                                <span className="progress-number">92%</span>
-                            </div>
+                            ))}
                         </div>
                         <FunFactSection/>
                     </div>

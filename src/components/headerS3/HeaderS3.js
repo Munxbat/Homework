@@ -88,17 +88,17 @@ const Header = (props) => {
                       <Link to="/service">{t('service')}</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link onClick={ClickHandler} to="/service-single/Consulting-Services">
+                          <Link onClick={ClickHandler} to="/service-single/consulting-services">
                             {t('consulting_services')}
                           </Link>
                         </li>
                         <li>
-                          <Link onClick={ClickHandler} to="/service-single/International-Trading">
-                            {t('international_trading')}
+                          <Link onClick={ClickHandler} to="/service-single/international-trading">
+                            {t('international_trading ')}
                           </Link>
                         </li>
                         <li>
-                          <Link onClick={ClickHandler} to="/service-single/Transportation-Logistics">
+                          <Link onClick={ClickHandler} to="/service-single/transportation-logistics">
                             {t('transportation_logistics')}
                           </Link>
                         </li>

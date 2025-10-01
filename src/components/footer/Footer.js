@@ -1,53 +1,89 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../../images/logo.svg'
-import Services from '../../api/Services'
-/* image */
-import Img1 from '../../images/instragram/1.jpg'
-import Img2 from '../../images/instragram/2.jpg'
-import Img3 from '../../images/instragram/3.jpg'
-import Img4 from '../../images/instragram/4.jpg'
-import Img5 from '../../images/instragram/5.jpg'
-import Img6 from '../../images/instragram/6.jpg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import logo from '../../images/logo.svg';
+import Services from '../../api/Services';
+import Products from '../../api/Products';
 
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
-}
+};
 
 const Footer = (props) => {
+    const { t } = useTranslation();
 
+    const translatedServices = Services.map((item) => ({
+        ...item,
+        title: t(`services.${item.key}.title`),
+    }));
+
+    const translatedProducts = Products.map((item) => ({
+        ...item,
+        title: t(`products.${item.key}.title`),
+    }));
 
     return (
-        <footer className={'' + props.hclass}>
+        <footer className={props.hclass || 'wpo-footer'}>
             <div className="wpo-upper-footer">
                 <div className="container">
                     <div className="row">
                         <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <Link className="logo" to="/"><img src={logo} alt="" /></Link>
+                                    <Link className="logo" to="/">
+                                        <img src={logo} alt={t('footer.logo_alt')} />
+                                    </Link>
                                 </div>
-                                <p>
-                                    We will work hard to provide our customers with satisfactory, fast, and reliable service.
-                                </p>
+                                <p>{t('footer.about_description')}</p>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to='#' ><i className="ti-facebook"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} to='#' ><i className="ti-twitter-alt"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} to='#' > <i className="ti-instagram"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} to='#' ><i className="ti-google"></i></Link></li>
+                                    <li>
+                                        <Link
+                                            to={t('footer.social.facebook')}
+                                            aria-label={t('footer.social.facebook_label')}
+                                        >
+                                            <i className="ti-facebook"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to={t('footer.social.twitter')}
+                                            aria-label={t('footer.social.twitter_label')}
+                                        >
+                                            <i className="ti-twitter-alt"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to={t('footer.social.instagram')}
+                                            aria-label={t('footer.social.instagram_label')}
+                                        >
+                                            <i className="ti-instagram"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to={t('footer.social.google')}
+                                            aria-label={t('footer.social.google_label')}
+                                        >
+                                            <i className="ti-google"></i>
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Our Services</h3>
+                                    <h3>{t('footer.services_title')}</h3>
                                 </div>
                                 <ul>
-                                    {Services.slice(0, 5).map((item, index) => (
+                                    {translatedServices.slice(0, 5).map((item, index) => (
                                         <li key={index}>
-                                            <Link onClick={ClickHandler} to={`/service-single/${item.slug}`}>
+                                            <Link
+                                                onClick={ClickHandler}
+                                                to={`/service-single/${item.slug}`}
+                                            >
                                                 {item.title}
                                             </Link>
                                         </li>
@@ -55,15 +91,18 @@ const Footer = (props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Our Products</h3>
+                                    <h3>{t('footer.products_title')}</h3>
                                 </div>
                                 <ul>
-                                    {Services.slice(0, 3).map((item, index) => (
+                                    {translatedProducts.slice(0, 3).map((item, index) => (
                                         <li key={index}>
-                                            <Link onClick={ClickHandler} to={`/service-single/${item.slug}`}>
+                                            <Link
+                                                onClick={ClickHandler}
+                                                to={`/product-single/${item.slug}`}
+                                            >
                                                 {item.title}
                                             </Link>
                                         </li>
@@ -71,48 +110,46 @@ const Footer = (props) => {
                                 </ul>
                             </div>
                         </div>
-
-                        <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget wpo-service-link-widget">
                                 <div className="widget-title">
-                                    <h3>Contact Us</h3>
+                                    <h3>{t('footer.contact_title')}</h3>
                                 </div>
                                 <div className="contact-ft">
                                     <ul>
-                                        <li><i className="fi flaticon-location"></i>Shar tohoi, 34-district BZD <br /> Ulaanbaatar, Mongolia</li>
-                                        <li><i className="fi flaticon-telephone"></i>+ (976) 9811-7676</li>
-                                        <li><i className="fi flaticon-email"></i>info@optimize-inc.com</li>
+                                        <li>
+                                            <i className="fi flaticon-location"></i>
+                                            {t('footer.contact.address')}
+                                        </li>
+                                        <li>
+                                            <i className="fi flaticon-telephone"></i>
+                                            {t('footer.contact.phone')}
+                                        </li>
+                                        <li>
+                                            <i className="fi flaticon-email"></i>
+                                            {t('footer.contact.email')}
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <div className="wpo-lower-footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col col-xs-12">
+                        <div className="col col-xs-12" style={{ marginBottom: "30px" }}>
                             <ul>
-                                <li>&copy; 2025 Optimize Inc LLC. All Rights Reserved.</li>
-                                {/* <li><Link onClick={ClickHandler} to='#' >Terms of use |</Link> <Link onClick={ClickHandler} to='#' >Privacy Environmental Policy</Link></li> */}
+                                <li>{t('footer.copyright', { year: new Date().getFullYear() })}</li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer >
-    )
-}
+        </footer>
+    );
+};
 
 export default Footer;
-
-
-
-
-
-
-
-
-
