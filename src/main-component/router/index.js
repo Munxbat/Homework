@@ -61,6 +61,8 @@ const AllRoute = () => {
           <Route path='MiningEquipment' element={<MiningEquipment />} />
           <Route path="HeavyTires" element={<HeavyTires />} />
           <Route path="Video/:slug" element={<VideoPage />} />
+          <Route path='/products/:category' element={<ShopPage/>} />
+          <Route path='products/' element={< ShopPage/>} />
         </Routes>
       </BrowserRouter>
 

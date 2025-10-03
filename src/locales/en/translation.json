@@ -9,17 +9,19 @@
   "consulting_services": "Consulting Services",
   "international_trading": "International Trading",
   "transportation_logistics": "Transportation & Logistics",
+  "mining_equipments":"Mining equipments",
+  "drilling_bits":"Drilling Bits",
+  "heavy_tires":"Heavy Tires",
   "shop": "Shop",
   "shop_single": "Shop Single",
   "cart": "Cart",
   "checkout": "Checkout",
-  "pricing": "Pricing",
+  "pricing1": "Pricing",
   "team_single": "Team Single",
   "error_404": "404 Error",
   "chat_greeting_logged_in": "Hello! Need help?",
   "chat_greeting_logged_out": "Chat with us!",
   "about_us": "About Us",
-  
   "aboutS2": {
     "subTitle": "About Us",
     "title": "<span>DIRECTOR'S&nbsp;</span> GREETINGS",
@@ -31,7 +33,6 @@
     "discoverMore": "Discover More",
     "ourservices": "Our Services"
   },
-  
   "features": {
     "technology": {
       "title": "Advanced Technology",
@@ -46,8 +47,6 @@
       "description": "Our team of highly skilled engineers provides professional guidance and technical solutions for mining equipment, drilling tools, and spare parts to ensure optimal performance and efficiency."
     }
   },
-
-  
   "services": {
     "consulting": {
       "title": "Consulting Services",
@@ -67,9 +66,74 @@
       "subtitle": "Our Services",
       "title": "Best solutions here",
       "highlight": "Services"
+    },
+    "service_single": {
+      "pagesub": "Service Single",
+      "error_title": "Service Not Found",
+      "error_message": "The requested service could not be found.",
+      "back_home": "Back to Home",
+      "capabilities_title": "Our Capabilities",
+      "approach_title": "Our Approach",
+      "work_process_title": "Our Work Process",
+      "related_service_title": "Related Services",
+      "contact_title": "Have project in mind? Let's discuss",
+      "contact_subtitle": "Get in touch with us to see how we can help you with your project",
+      "consulting-services": {
+        "description": "Our consulting service is designed to provide mining and industrial companies with strategic guidance, reliable solutions, and expert support. With years of experience in the supply of drilling bits, spare parts, and international trade, we help our clients optimize operations, reduce costs, and achieve sustainable growth.",
+        "capabilities": [
+          "Provide tailored consulting for mining equipment and spare parts procurement.",
+          "Develop strategies to optimize supply chain and reduce operational risks.",
+          "Facilitate international trade and logistics solutions for efficient delivery.",
+          "Offer technical insights for equipment performance improvement.",
+          "Deliver financial and market analysis for smarter investment decisions."
+        ],
+        "approach": "We work closely with our clients to understand their specific needs and operational challenges. From equipment selection to logistics planning, our approach is practical, data-driven, and focused on creating measurable results. By combining local knowledge with global expertise, we ensure our clients stay competitive in a demanding industry.",
+        "workProcess": [
+          "Assess client requirements and operational environment.",
+          "Identify cost-effective solutions and reliable suppliers.",
+          "Provide tailored recommendations for mining tools and spare parts.",
+          "Support contract negotiations and trade processes.",
+          "Monitor performance and deliver continuous improvement strategies."
+        ]
+      },
+      "international-trading": {
+        "description": "Our international trading service connects global suppliers with mining and industrial companies, ensuring seamless import and export processes. We specialize in sourcing high-quality drilling bits, spare parts, and equipment, delivering cost-effective and reliable trade solutions.",
+        "capabilities": [
+          "Source high-quality mining equipment and spare parts from global suppliers.",
+          "Manage import and export processes with efficiency and compliance.",
+          "Provide market insights to identify cost-effective trading opportunities.",
+          "Facilitate trade negotiations and contracts for seamless transactions.",
+          "Ensure timely delivery through optimized supply chain management."
+        ],
+        "approach": "We leverage our global network to source the best products and streamline trade processes. Our approach focuses on transparency, compliance, and efficiency, ensuring our clients receive high-quality products at competitive prices.",
+        "workProcess": [
+          "Identify client needs and market opportunities.",
+          "Source products from trusted global suppliers.",
+          "Manage customs and compliance requirements.",
+          "Negotiate trade agreements and contracts.",
+          "Track and optimize delivery schedules."
+        ]
+      },
+      "transportation-logistics": {
+        "description": "Our transportation and logistics service provides efficient, reliable solutions for delivering mining equipment and spare parts. With a fleet of trucks, cranes, and local delivery options, we ensure timely and secure delivery to meet project demands.",
+        "capabilities": [
+          "Offer a fleet of trucks and cranes for heavy equipment transport.",
+          "Provide local and international delivery solutions.",
+          "Optimize logistics routes to reduce costs and delivery times.",
+          "Ensure secure handling and transport of sensitive equipment.",
+          "Track shipments in real-time for full transparency."
+        ],
+        "approach": "Our logistics solutions are tailored to the unique needs of each client, ensuring timely and secure delivery. We combine advanced technology with experienced logistics teams to minimize delays and maximize efficiency.",
+        "workProcess": [
+          "Assess transportation needs and project timelines.",
+          "Plan optimized routes and select appropriate transport methods.",
+          "Coordinate loading, transport, and delivery of equipment.",
+          "Monitor shipments and provide real-time updates.",
+          "Evaluate logistics performance for continuous improvement."
+        ]
+      }
     }
   },
-  
   "skill": {
     "subtitle": "Our Skill",
     "title": "Why choose <span>us?</span>",
@@ -90,24 +154,24 @@
     }
   },
   "testimonials": [
-          {
-            "id": "01",
-            "des": "We have been using Optimize Inc.'s drill bits and mining spare parts for many years. Their high-quality products and reliable service have played a vital role in ensuring efficient and uninterrupted operations in our projects.",
-            "title": "Bat-Erdene T.",
-            "sub": "CEO, Erdenet Mining Corporation"
-          },
-          {
-            "id": "02",
-            "des": "Optimize Inc.'s cooperation in foreign trade and spare parts supply is highly valuable to us. Their direct collaboration with international suppliers ensures fast and reliable delivery of orders.",
-            "title": "Jenefer Haiway",
-            "sub": "Procurement Director, Caterpillar Mongolia LLC"
-          },
-          {
-            "id": "03",
-            "des": "Optimize Inc. consistently supports us with maintenance and spare parts supply for our mining drilling equipment. Their technical support and flexible services perfectly match our project and operational needs.",
-            "title": "Ganbold Ch.",
-            "sub": "Operations Manager, Oyu Tolgoi LLC"
-          }
+    {
+      "id": "01",
+      "des": "We have been using Optimize Inc.'s drill bits and mining spare parts for many years. Their high-quality products and reliable service have played a vital role in ensuring efficient and uninterrupted operations in our projects.",
+      "title": "Bat-Erdene T.",
+      "sub": "CEO, Erdenet Mining Corporation"
+    },
+    {
+      "id": "02",
+      "des": "Optimize Inc.'s cooperation in foreign trade and spare parts supply is highly valuable to us. Their direct collaboration with international suppliers ensures fast and reliable delivery of orders.",
+      "title": "Jenefer Haiway",
+      "sub": "Procurement Director, Caterpillar Mongolia LLC"
+    },
+    {
+      "id": "03",
+      "des": "Optimize Inc. consistently supports us with maintenance and spare parts supply for our mining drilling equipment. Their technical support and flexible services perfectly match our project and operational needs.",
+      "title": "Ganbold Ch.",
+      "sub": "Operations Manager, Oyu Tolgoi LLC"
+    }
   ],
   "cta": {
     "title": "Should you require any assistance or wish to establish direct collaboration, please do not hesitate to contact us.",
@@ -116,14 +180,14 @@
     "email_error": "Please enter a valid email address.",
     "success_message": "Thank you for subscribing!"
   },
-"footer": {
+  "footer": {
     "logo_alt": "Optimize Inc Logo",
     "about_description": "We will work hard to provide our customers with satisfactory, fast, and reliable service.",
     "services_title": "Our Services",
     "products_title": "Our Products",
     "contact_title": "Contact Us",
     "contact": {
-      "address": "Shar tohoi, 20-district BZD, Ulaanbaatar, Mongolia",
+      "address": "Khar usan tohoi, 20-district BZD, Ulaanbaatar, Mongolia",
       "phone": "+ (976) 9811-7676",
       "email": "info@optimize-inc.com"
     },
@@ -147,7 +211,6 @@
     "service": "Our Services",
     "products": "Our Products",
     "team": "Our Team"
-    
   },
   "team1": {
     "title": "Our Expert Team",
@@ -159,45 +222,129 @@
     "Altanshagai": "Altanshagai.E",
     "Altanshagai_sub": "Partner & Consultant"
   },
-  "service_single": {
-      "pagesub": "Service Single",
-      "capabilities_title": "Our Capabilities",
-      "approach_title": "Our Approach",
-      "work_process_title": "Our Work Process",
-      "related_service_title": "Related Service",
-      "contact_title": "Have project in mind? Let's discuss",
-      "contact_subtitle": "Get in touch with us to see how we can help you with your project",
-      "trading": {
-        "description": "Our International Trading service connects local mining companies with global markets. We specialize in the import and export of drilling bits, mining spare parts, and industrial equipment, ensuring reliable access to high-quality products from trusted international suppliers.",
-        "capabilities": [
-          "Import and export of drilling tools, mining spare parts, and heavy equipment.",
-          "Strong partnerships with global manufacturers and distributors.",
-          "Streamlined customs clearance and compliance with international trade standards.",
-          "Efficient logistics and transportation solutions for timely delivery.",
-          "Competitive sourcing to minimize costs and maximize profitability."
-        ],
-        "approach": "We believe that international trade should be seamless and transparent. Our team manages the full process — from supplier selection and procurement to shipping and customs clearance — ensuring that our clients receive their products on time and within budget. With a deep understanding of both local and global markets, we act as a trusted bridge between suppliers and mining companies.",
-        "work_process": [
-          "Identify client requirements and match with trusted suppliers worldwide.",
-          "Negotiate favorable terms to secure cost-effective deals.",
-          "Handle import/export documentation and customs compliance.",
-          "Organize international logistics and freight forwarding.",
-          "Deliver continuous support to guarantee successful long-term trade relations."
-        ]
-      }
+  "serviceSinglePage": {
+    "consulting-services": {
+
+      "capabilities": [
+        "Provide tailored consulting for mining equipment and spare parts procurement.",
+        "Develop strategies to optimize supply chain and reduce operational risks.",
+        "Facilitate international trade and logistics solutions for efficient delivery.",
+        "Offer technical insights for equipment performance improvement.",
+        "Deliver financial and market analysis for smarter investment decisions."
+      ],
+      "approachTitle": "Our Approach",
+      "approach": "We work closely with our clients to understand their specific needs and operational challenges. From equipment selection to logistics planning, our approach is practical, data-driven, and focused on creating measurable results. By combining local knowledge with global expertise, we ensure our clients stay competitive in a demanding industry.",
+      "workProcessTitle": "Our Work Process",
+      "workProcess": [
+        "Assess client requirements and operational environment.",
+        "Identify cost-effective solutions and reliable suppliers.",
+        "Provide tailored recommendations for mining tools and spare parts.",
+        "Support contract negotiations and trade processes.",
+        "Monitor performance and deliver continuous improvement strategies."
+      ],
+      "relatedServiceTitle": "Related Service",
+      "contactTitle": "Have project in mind? Let's discuss",
+      "contactDescription": "Get in touch with us to see how we can help you with your project"
+    },
+    "international-trading": {
+
+      "capabilities": [
+        "Source high-quality mining equipment and spare parts from global suppliers.",
+        "Manage import and export processes with efficiency and compliance.",
+        "Provide market insights to identify cost-effective trading opportunities.",
+        "Facilitate trade negotiations and contracts for seamless transactions.",
+        "Ensure timely delivery through optimized supply chain management."
+      ],
+      "approachTitle": "Our Approach",
+      "approach": "We leverage our global network to source the best products and streamline trade processes. Our approach focuses on transparency, compliance, and efficiency, ensuring our clients receive high-quality products at competitive prices.",
+      "workProcessTitle": "Our Work Process",
+      "workProcess": [
+        "Identify client needs and market opportunities.",
+        "Source products from trusted global suppliers.",
+        "Manage customs and compliance requirements.",
+        "Negotiate trade agreements and contracts.",
+        "Track and optimize delivery schedules."
+      ],
+      "relatedServiceTitle": "Related Service",
+      "contactTitle": "Have project in mind? Let's discuss",
+      "contactDescription": "Get in touch with us to see how we can help you with your project"
+    },
+    "transportation-logistics": {
+
+      "capabilities": [
+        "Offer a fleet of trucks and cranes for heavy equipment transport.",
+        "Provide local and international delivery solutions.",
+        "Optimize logistics routes to reduce costs and delivery times.",
+        "Ensure secure handling and transport of sensitive equipment.",
+        "Track shipments in real-time for full transparency."
+      ],
+      "approachTitle": "Our Approach",
+      "approach": "Our logistics solutions are tailored to the unique needs of each client, ensuring timely and secure delivery. We combine advanced technology with experienced logistics teams to minimize delays and maximize efficiency.",
+      "workProcessTitle": "Our Work Process",
+      "workProcess": [
+        "Assess transportation needs and project timelines.",
+        "Plan optimized routes and select appropriate transport methods.",
+        "Coordinate loading, transport, and delivery of equipment.",
+        "Monitor shipments and provide real-time updates.",
+        "Evaluate logistics performance for continuous improvement."
+      ],
+      "relatedServiceTitle": "Related Service",
+      "contactTitle": "Have project in mind? Let's discuss",
+      "contactDescription": "Get in touch with us to see how we can help you with your project"
     }
+},
+   
+   "pricing": {
+        "mining_equipment_1": "Mining equipments",
+        "mining_drill_1": "Mining Drill Bits",
+        "heavy_tire_1" : "Heavy Tires",
+        "subtitle": "Our Product Types",
+        "title": "Choose Your Plan",
+        "titleColor": "primary",
+        "available": "Available Now",
+        "showMore": "Show More",
+        "noProducts": "No products available at this time.",
+        "alt": {
 
-
-
-
+            "mining-equipment": "Mining equipment image",
+            "mining-drills": "Mining drills image",
+            "heavy-tires": "Heavy tires image"
+        },
+        "products": {
+            "mining-equipment": {
+              
+                "description": "High-performance mining equipment for efficiency and durability.",
+                "features": {
+                    "1": "Advanced automation systems",
+                    "2": "Robust construction",
+                    "3": "Low maintenance costs",
+                    "4": "Operator-friendly design",
+                    "5": "Power & energy optimized"
+                }
+            },
+            "mining-drills": {
+                "description": "High-performance mining drills designed for efficiency and durability. Perfect for small to medium-scale operations.",
+                "features": {
+                    "1": "General living space advices",
+                    "2": "Complete Petroleum Refinery",
+                    "3": "Modern Industries planning",
+                    "4": "Industries design advices",
+                    "5": "Power & Energy"
+                }
+            },
+            "heavy-tires": {
+                "description": "Durable heavy tires ideal for mining & construction vehicles.",
+                "features": {
+                    "1": "High load capacity",
+                    "2": "Wear-resistant materials",
+                    "3": "Excellent traction",
+                    "4": "Long service life",
+                    "5": "Ideal for mining & construction vehicles"
+                }
+            }
+        }
+    }
+  
 }
-
-
-
-
-
-
-
-
-
+  
   

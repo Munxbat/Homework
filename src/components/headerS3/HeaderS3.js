@@ -94,7 +94,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/service-single/international-trading">
-                            {t('international_trading ')}
+                            {t('international_trading')}
                           </Link>
                         </li>
                         <li>
@@ -105,8 +105,14 @@ const Header = (props) => {
                       </ul>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link to="/shop">{t('products')}</Link>
+                      <Link to="/productgrouppage">{t('products')}</Link>
+                      <ul className="sub-menu">
+                        <li><Link onClick={ClickHandler} to="/products/Mining%20Equipment">{t('mining_equipments')}</Link></li>
+                        <li><Link onClick={ClickHandler} to="/products/Drilling%20Bit">{t('drilling_bits')}</Link></li>
+                        <li><Link onClick={ClickHandler} to="/products/Heavy%20Tires">{t('heavy_tires')}</Link></li>
+                        </ul>
                     </li>
+
                     <li className="menu-item-has-children">
                       <Link to="#">{t('pages')}</Link>
                       <ul className="sub-menu">

@@ -12,6 +12,8 @@ import SImg from '../../images/skill2.jpg'
 import HeroSection from '../../components/HeroSlider/Herosection';
 import Ticker from '../../components/Metal/Ticker';
 import ChatSection from '../../components/Messenger/ChatSection';
+import PricingSection from '../../components/PricingSection/PricingSection';
+
 
 
 const HomePage = () => {
@@ -23,8 +25,10 @@ const HomePage = () => {
             <HeroSection />
             <Ticker />
             <AboutS2 hclass={'wpo-about-area-s4 section-padding'}/>
+            
             <FeaturesSection hclass={'wpo-features-area-s2 section-padding'} />
             <ServiceSectionS2 hclass={"wpo-service-area-s2"} ServiceBtn={true} />
+            <PricingSection hclass={'wpo-about-area-s2 section-padding'} />
             <SkillSection hclass={'wpo-skill-section-s2 section-padding'} Akimg={SImg} />
             
             <Testimonial hclass={'wpo-testimonial-area-s3 section-padding'} />

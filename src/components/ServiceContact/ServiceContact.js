@@ -36,7 +36,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="contact-validation-active" id="contact-form-main">
+        <form onSubmit={handleSubmit} className="office-info-text" id="contact-form-main">
             <div className="row">
                 <div className="col col-lg-6 col-md-6 col-12">
                     <input
@@ -44,7 +44,7 @@ const ContactForm = () => {
                         className="form-control"
                         name="name"
                         id="name"
-                        placeholder="Your Name*"
+                        placeholder="Таны нэр*"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -56,24 +56,25 @@ const ContactForm = () => {
                         className="form-control"
                         name="email"
                         id="email"
-                        placeholder="Your Email*"
+                        placeholder="Таны и-мэйл хаяг*"
                         value={formData.email}
                         onChange={handleChange}
                         required
                     />
                 </div>
-                <div className="col col-lg-12 col-12">
+                <div className="col col-lg-12 col-12" >
                     <select
                         name="service"
-                        className="form-control"
+                         className={`form-control text-white ${formData.service ? 'text-black' : 'text-gray-400'}`}
                         value={formData.service}
                         onChange={handleChange}
                         required
+                        
                     >
-                        <option disabled value="">Services</option>
-                        <option>Mechanical Engineering</option>
-                        <option>Petroleum Refinery</option>
-                        <option>Power & Energy</option>
+                        <option disabled value="" style={{ color: '#999' }}>Үйлчилгээний төрөл сонгох*</option>
+                        <option style={{color: 'black'}}>Зөвлөх үйлчилгээ</option>
+                        <option style={{color: 'black'}}>Олон улсын худалдаа</option>
+                        <option style={{color: 'black'}}>Тээвэр ложистик</option>
                     </select>
                 </div>
                 <div className="fullwidth col col-lg-12 col-12">
@@ -81,7 +82,7 @@ const ContactForm = () => {
                         className="form-control"
                         name="note"
                         id="note"
-                        placeholder="Message..."
+                        placeholder="Энд бичнэ үү..."
                         value={formData.note}
                         onChange={handleChange}
                         required

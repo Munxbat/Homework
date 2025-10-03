@@ -66,7 +66,7 @@ Ulaanbaatar, Mongolia</p>
                     </div>
                 </div>
             </div>
-            <section className="wpo-contact-map-section">
+            <section className="wpo-contact-map">
                 <div className="wpo-contact-map">
                     <iframe title='comtact-map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4495.858238578431!2d107.14953826953396!3d47.93139514516954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smn!2smn!4v1759091012044!5m2!1smn!2smn"></iframe>
                 </div>

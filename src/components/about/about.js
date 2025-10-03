@@ -36,14 +36,15 @@ const AboutSection = ({ hclass, mainImage }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12" style={{ textAlign: 'right' }}> {/*энэ div ийг баруун тийш нь байрлуулмаар байна */}
+                    <div className="col-lg-6 col-md-12 col-sm-12" style={{ textAlign: 'right' }}> 
                         <div className="wpo-about-img">
                             <img
                                 src={mainImage || defaultImage}
                                 alt={t('aboutS2.image_alt')}
                                 className="about-main-image"
+                                style={{ maxWidth: '90%', height: 'auto', marginLeft: '200px' }}
                             />
-                            <div className="wpo-about-item">
+                            <div className="wpo-about-item" style={{ marginTop: '-20px',marginLeft: '10px' }}>
                                 <div className="wpo-about-top">
                                     <div className="wpo-about-thumb-img">
                                         <img src={ceoImage} alt={t('aboutS2.ceo_alt')} />

@@ -101,9 +101,9 @@ const Footer = (props) => {
                                         <li key={index}>
                                             <Link
                                                 onClick={ClickHandler}
-                                                to={`/product-single/${item.slug}`}
+                                                to={item.link}
                                             >
-                                                {item.title}
+                                                {t(item.plan)}
                                             </Link>
                                         </li>
                                     ))}
@@ -115,19 +115,25 @@ const Footer = (props) => {
                                 <div className="widget-title">
                                     <h3>{t('footer.contact_title')}</h3>
                                 </div>
-                                <div className="contact-ft">
-                                    <ul>
+                                <div className="contact-ft" >
+                                    <ul >
                                         <li>
                                             <i className="fi flaticon-location"></i>
-                                            {t('footer.contact.address')}
+                                                <a href="" style={{color:"#fff"}}>
+                                                {t('footer.contact.address')}
+                                            </a>
                                         </li>
-                                        <li>
+                                        <li style={{color:"#fff"}}>
                                             <i className="fi flaticon-telephone"></i>
+                                            <a href="tel:+97698117272" style={{color:"#fff"}}>
                                             {t('footer.contact.phone')}
+                                            </a>
                                         </li>
                                         <li>
                                             <i className="fi flaticon-email"></i>
+                                            <a href="mailto:info@optimize-inc.com" style={{color:"#fff"}}>
                                             {t('footer.contact.email')}
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

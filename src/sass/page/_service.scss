@@ -2,6 +2,7 @@
 10. wpo-service-single
 ======================================================*/
 .wpo-service-single-area{
+    background-color: $dark-gray;
     .wpo-service-single-wrap{
         .wpo-service-single-title{
             h3{
@@ -9,6 +10,7 @@
                 font-size: 35px;
                 line-height: 130.5%;
                 margin-bottom: 20px;
+                color: $white;
 
                 @media(max-width:767px){
                     font-size: 25px;
@@ -48,6 +50,7 @@
                        text-align: center;
                        color: $theme-primary-color;
                        font-size: 14px;
+                       
                     }
                 }
             }
@@ -61,11 +64,39 @@
             padding-bottom: 0;
 
             .wpo-service-item {
-                padding: 20px;
-
+                    padding: 20px;
+                    box-shadow: 0px 4px 10px 3px $theme-primary-color-s2;
+                    border-radius: 10px;
+                    padding: 60px 40px;
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    height: 100%;
+                    flex: 1 1 100%;
                 i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $dark-gray;
+                    box-shadow: 3px 4px 15px 5px rgba(21, 3, 131, 0.04);
+                    border-radius: 50%;
+			        text-align: center;
+                svg {
+                        width: 60px;
+                        height: 60px;
+                }
+                path {
+                    fill: $white;
+                }
+            
                     img{
-                        max-width: 50px;
+                        max-width: 200px;
+                        
+                        
+                        
                     }
                 }
 
@@ -74,10 +105,14 @@
                   }
 
                 h2{
+                       display: flex;
+                    justify-content: center;
+                    align-items: center;
                     font-weight: 600;
                     font-size: 22px;
                     margin-bottom: 5px;
                     margin-top: 20px;
+                    color: antiquewhite;
 
                     @media(max-width:1400px){
                       font-size: 19px;
@@ -91,7 +126,19 @@
                       font-size: 22px;
                     }
                 }
+                a {
+                       display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $cyan;
+                    &:hover{
+                        color: $theme-primary-color;
+                    }
+                }
                 p{
+                       display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin-bottom: 5px;
                     font-size: 16px;
                 }
@@ -100,12 +147,14 @@
 
         .wpo-service-contact-area{
             padding: 30px;
-            box-shadow: 0px 2px 8px 2px rgba(22, 14, 71, 0.1);
+            
             border-radius: 20px;
-            background: $white;
+            background: $small-black;
+            box-shadow: 0px 4px 10px 3px $theme-primary-color-s2;
 
             .wpo-contact-title{
                 margin-bottom: 30px;
+                color: $white;
             }
 
             .wpo-contact-form-area{
@@ -131,6 +180,9 @@
                 }
 
                 .submit-area{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     button{
                         border-radius: 6px;
                     }
